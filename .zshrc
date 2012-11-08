@@ -4,13 +4,18 @@ autoload -Uz promptinit
 promptinit
 prompt walters
 
-# Use emacs keybindings even if our EDITOR is set to vi
-bindkey -e
+# Use vi keybindings 
+bindkey -v
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
-HISTSIZE=3000
-SAVEHIST=3000
+HISTSIZE=10000
+SAVEHIST=10000
 HISTFILE=~/.zsh_history
+
+setopt appendhistory autocd extendedglob
+
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/sam/.zshrc'
 
 # Use modern completion system
 autoload -Uz compinit
