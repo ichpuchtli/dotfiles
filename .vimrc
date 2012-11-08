@@ -20,12 +20,15 @@ filetype indent on
 
 " ================ Colorscheme Config ====================
 
-syntax enable
+" Enable syntax highlighting
+syntax on
+
+" Brighten foreground colours
 set background=dark
 
 if has('gui_running')
     colorscheme solarized
-    " Hide everything but memu ba
+    " Hide everything but menu bar
     set guioptions=m
 
 endif
@@ -44,9 +47,6 @@ nnoremap <silent> <Leader>b :bp<CR>
 " Delete Buffer
 nnoremap <silent> <Leader>x :bd<CR>
 
-" Launch zsh in a new tab!
-nmap <silent> <Leader>z :tabe<CR>:set nonumber<CR>:ConqueTerm zsh<CR>
-
 " Toggle paste mode
 nmap <silent> <Leader>p :set invpaste<CR>:set paste?<CR>
 
@@ -58,8 +58,6 @@ nmap <silent> <Leader>md :!mkdir -p %:p:h<CR>
 nmap <silent> <Leader>gw :vimgrep /<C-r><C-w>/ %<CR>:ccl<CR>:cwin<CR><C-W>J:nohls<CR>
 
 nmap <silent> <C-o> :NERDTreeToggle<CR>
-
-
 
 " ================ General Config ====================
 
@@ -84,8 +82,8 @@ set autowrite
 " Hide the mouse pointer while typing
 set mousehide
 
-"Line numbers are good
-set number              
+" Not a fan of numbers anymore
+"set number              
 
 "Allow backspace in insert mode
 set backspace=indent,eol,start
@@ -99,8 +97,8 @@ set showmode
 "Disable cursor blink
 set gcr=a:blinkon0
 
-"No sounds
-set visualbell
+"No bell visual or otherwise
+set novb
 
 "Reload files changed outside vim
 set autoread 
