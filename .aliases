@@ -1,16 +1,11 @@
 #!/bin/sh
 # Aliases
+
 alias ls='ls --color=auto'
-alias grep='grep --color=auto'
+alias l='ls'
 alias ll='ls -hl --group-directories-first'
 alias la='ls -a'
-alias lm='ls -ltcr'
-alias lt='ls -lhart'
-alias l='ls -cf'
-alias u='cd ..'
+alias grep='grep --color=auto'
 alias del='rm -rf'
-alias ..='cd ..'
-alias moc='mocp --theme transparent-background -O Keymap=vimish.keymap -O FormatString="%(a:%a - :)%(t:%t:)" -O Shuffle=yes -O ShowFormat=no'
-alias vi='vim -p'
-alias gvi='gvim -p'
+alias vi='vim'
 alias man='man -a'
