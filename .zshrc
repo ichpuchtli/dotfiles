@@ -42,6 +42,3 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
-
-
-export PATH=/sbin:/usr/sbin:$PATH
