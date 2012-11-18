@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<openbox_menu>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
 	<menu id="root-menu" label="OpenBox 3">
-		<menu id="2" label="Editors">
-			<item label="AA Fire">
+		<menu execute="~/.config/openbox/pipemenus/obpipemenu-places ~/" id="places" label="Places"/>
+		<menu id="tools" label="Applications">
+			<item label="Disks">
 				<action name="Execute">
-					<execute>xterm -e aafire -driver slang</execute>
+					<execute>gnome-disks</execute>
+				</action>
+			</item>
+			<item label="FireFox">
+				<action name="Execute">
+					<execute>firefox</execute>
+				</action>
+			</item>
+			<item label="GParted">
+				<action name="Execute">
+					<execute>gparted-pkexec</execute>
 				</action>
 			</item>
 			<item label="GVim">
@@ -12,74 +23,34 @@
 					<execute>gvim</execute>
 				</action>
 			</item>
+			<item label="Guake Terminal">
+				<action name="Execute">
+					<execute>guake</execute>
+				</action>
+			</item>
 			<item label="Leafpad">
 				<action name="Execute">
 					<execute>leafpad</execute>
 				</action>
 			</item>
-			<item label="Nano">
+			<item label="Network Connections">
 				<action name="Execute">
-					<execute>xterm -e nano</execute>
+					<execute>nm-connection-editor</execute>
 				</action>
 			</item>
-			<item label="Vi">
+			<item label="Redshift">
 				<action name="Execute">
-					<execute>xterm -e vi</execute>
+					<execute>gtk-redshift</execute>
 				</action>
 			</item>
-			<item label="Vim">
+			<item label="SpaceFM File Search">
 				<action name="Execute">
-					<execute>xterm -e vim</execute>
+					<execute>spacefm</execute>
 				</action>
 			</item>
-		</menu>
-		<menu id="18" label="Games">
-			<menu id="9" label="Adventure">
-				<item label="Sclient">
-					<action name="Execute">
-						<execute>sclient</execute>
-					</action>
-				</item>
-			</menu>
-			<menu id="10" label="Arcade">
-				<item label="PacMan">
-					<action name="Execute">
-						<execute>pacman</execute>
-					</action>
-				</item>
-			</menu>
-		</menu>
-		<menu id="6" label="Graphics">
-			<item label="gThumb">
+			<item label="Thunar File Manager">
 				<action name="Execute">
-					<execute>gthumb</execute>
-				</action>
-			</item>
-			<item label="Image Viewer">
-				<action name="Execute">
-					<execute>gpicview</execute>
-				</action>
-			</item>
-			<item label="scanimage">
-				<action name="Execute">
-					<execute>xterm -e scanimage</execute>
-				</action>
-			</item>
-		</menu>
-		<menu id="7" label="Multimedia">
-			<item label="ALSA mixer">
-				<action name="Execute">
-					<execute>xterm -e alsamixer</execute>
-				</action>
-			</item>
-			<item label="DeaDBeeF">
-				<action name="Execute">
-					<execute>deadbeef</execute>
-				</action>
-			</item>
-			<item label="GNOME MPlayer">
-				<action name="Execute">
-					<execute>gnome-mplayer</execute>
+					<execute>thunar</execute>
 				</action>
 			</item>
 			<item label="Xfburn">
@@ -88,309 +59,152 @@
 				</action>
 			</item>
 		</menu>
-		<menu id="5" label="Network">
-			<item label="Chromium">
-				<action name="Execute">
-					<execute>chromium</execute>
-				</action>
-			</item>
-			<item label="FileZilla">
-				<action name="Execute">
-					<execute>filezilla</execute>
-				</action>
-			</item>
-			<item label="FireFox">
-				<action name="Execute">
-					<execute>firefox</execute>
-				</action>
-			</item>
-			<item label="FTP">
-				<action name="Execute">
-					<execute>xterm -e ftp</execute>
-				</action>
-			</item>
-			<item label="Mail">
-				<action name="Execute">
-					<execute>xterm -e mail</execute>
-				</action>
-			</item>
-			<item label="Mail Reader">
-				<action name="Execute">
-					<execute>exo-open --launch MailReader</execute>
-				</action>
-			</item>
-			<item label="Talk">
-				<action name="Execute">
-					<execute>xterm -e talk</execute>
-				</action>
-			</item>
-			<item label="Telnet">
-				<action name="Execute">
-					<execute>xterm -e telnet</execute>
-				</action>
-			</item>
-			<item label="TkVNC">
-				<action name="Execute">
-					<execute>xterm -e tkvnc</execute>
-				</action>
-			</item>
-			<item label="Web Browser">
-				<action name="Execute">
-					<execute>exo-open --launch WebBrowser</execute>
-				</action>
-			</item>
-		</menu>
-		<menu id="3" label="Office">
-			<item label="ePDFViewer">
-				<action name="Execute">
-					<execute>epdfview</execute>
-				</action>
-			</item>
-		</menu>
-		<menu id="39" label="Other">
-			<item label="Galculator">
-				<action name="Execute">
-					<execute>galculator</execute>
-				</action>
-			</item>
-			<item label="Redshift">
-				<action name="Execute">
-					<execute>gtk-redshift</execute>
-				</action>
-			</item>
-			<item label="System Profiler and Benchmark">
-				<action name="Execute">
-					<execute>hardinfo</execute>
-				</action>
-			</item>
-		</menu>
-		<menu id="19" label="Shells">
-			<item label="GIT">
-				<action name="Execute">
-					<execute>xterm -e git</execute>
-				</action>
-			</item>
-			<item label="Guake Terminal">
-				<action name="Execute">
-					<execute>guake</execute>
-				</action>
-			</item>
-			<item label="LXTerminal">
-				<action name="Execute">
-					<execute>lxterminal</execute>
-				</action>
-			</item>
-			<item label="Thunar File Manager">
-				<action name="Execute">
-					<execute>thunar</execute>
-				</action>
-			</item>
-			<item label="UXTerm">
-				<action name="Execute">
-					<execute>uxterm</execute>
-				</action>
-			</item>
-			<item label="Xterm">
-				<action name="Execute">
-					<execute>xterm</execute>
-				</action>
-			</item>
-		</menu>
-		<menu id="37" label="System">
-			<menu id="36" label="Settings">
-				<menu id="21" label="GNOME">
-					<item label="Adobe Flash Player">
+		<separator/>
+		<item label="Terminal">
+			<action name="Execute">
+				<execute>lxterminal</execute>
+			</action>
+		</item>
+		<item label="Chromium">
+			<action name="Execute">
+				<execute>chromium</execute>
+			</action>
+		</item>
+		<item label="Htop">
+			<action name="Execute">
+				<execute>lxterminal -e htop</execute>
+			</action>
+		</item>
+		<item label="FileZilla">
+			<action name="Execute">
+				<execute>filezilla</execute>
+			</action>
+		</item>
+		<item label="Galculator">
+			<action name="Execute">
+				<execute>galculator</execute>
+			</action>
+		</item>
+		<separator/>
+		<menu id="36" label="Settings">
+			<menu id="37" label="OpenBox">
+				<menu id="root-menu-891528" label="Eye Candy">
+					<item label="No effects">
 						<action name="Execute">
-							<execute>flash-player-properties</execute>
+							<execute> ~/.config/openbox/scripts/xcompmgr.sh unset </execute>
 						</action>
 					</item>
-					<item label="Guake Preferences">
+					<item label="Transparency">
 						<action name="Execute">
-							<execute>guake-prefs</execute>
+							<execute> ~/.config/openbox/scripts/xcompmgr.sh set </execute>
 						</action>
 					</item>
-					<item label="Network Connections">
+					<item label="Transparency, fading">
 						<action name="Execute">
-							<execute>nm-connection-editor</execute>
+							<execute> ~/.config/openbox/scripts/xcompmgr.sh setshaded </execute>
+						</action>
+					</item>
+					<item label="Transparency, fading shadows">
+						<action name="Execute">
+							<execute> ~/.config/openbox/scripts/xcompmgr.sh setshadowshade </execute>
 						</action>
 					</item>
 				</menu>
-				<menu id="35" label="Xfce">
-					<item label="Notifications">
-						<action name="Execute">
-							<execute>xfce4-notifyd-config</execute>
-						</action>
-					</item>
-				</menu>
-				<item label="ARandR">
+				<item label="Edit autostart">
 					<action name="Execute">
-						<execute>arandr</execute>
+						<execute>gvim ~/.config/openbox/autostart</execute>
 					</action>
 				</item>
-				<item label="Customize Look and Feel">
+				<item label="Key Editor">
 					<action name="Execute">
-						<execute>lxappearance</execute>
+						<execute> obkey </execute>
 					</action>
 				</item>
-				<item label="Disks">
-					<action name="Execute">
-						<execute>gnome-disks</execute>
-					</action>
-				</item>
-				<item label="File Manager">
-					<action name="Execute">
-						<execute>thunar-settings</execute>
-					</action>
-				</item>
-				<item label="Keyboard and Mouse">
-					<action name="Execute">
-						<execute>lxinput</execute>
-					</action>
-				</item>
-				<item label="Openbox Configuration Manager">
+				<item label="Configuration Manager">
 					<action name="Execute">
 						<execute>obconf</execute>
 					</action>
 				</item>
-				<item label="Panel tint2">
+				<item label="Menu Editor">
 					<action name="Execute">
-						<execute>tint2conf</execute>
+						<execute> obmenu </execute>
 					</action>
 				</item>
-				<item label="Preferred Applications">
+				<separator/>
+				<item label="Reconfigure">
+					<action name="Reconfigure"/>
+				</item>
+				<item label="Restart">
+					<action name="Restart"/>
+				</item>
+			</menu>
+			<menu id="38" label="Conky Config">
+				<item label="Edit .conkyrc">
 					<action name="Execute">
-						<execute>exo-preferred-applications</execute>
+						<execute> gvim ~/.conkyrc </execute>
 					</action>
 				</item>
-				<item label="Removable Drives and Media">
+				<item label="Restart Conky">
 					<action name="Execute">
-						<execute>thunar-volman-settings</execute>
+						<execute> conkywonky </execute>
 					</action>
 				</item>
 			</menu>
-			<item label="Batti">
+			<item label="Customize Look and Feel">
 				<action name="Execute">
-					<execute>batti</execute>
+					<execute>lxappearance</execute>
 				</action>
 			</item>
-			<item label="Bulk Rename">
+			<item label="Notifications">
 				<action name="Execute">
-					<execute>/usr/lib/Thunar/ThunarBulkRename</execute>
+					<execute>xfce4-notifyd-config</execute>
 				</action>
 			</item>
-			<item label="Catfish File Search">
-				<action name="Execute">
-					<execute>catfish</execute>
-				</action>
-			</item>
-			<item label="dconf Editor">
+			<item label="Dconf Editor">
 				<action name="Execute">
 					<execute>dconf-editor</execute>
 				</action>
 			</item>
-			<item label="GParted">
+			<item label="Guake Preferences">
 				<action name="Execute">
-					<execute>gparted-pkexec</execute>
+					<execute>guake-prefs</execute>
 				</action>
 			</item>
-			<item label="Htop">
+			<item label="Keyboard and Mouse">
 				<action name="Execute">
-					<execute>xterm -e htop</execute>
+					<execute>lxinput</execute>
 				</action>
 			</item>
-			<item label="pstree">
+			<item label="Panel tint2">
 				<action name="Execute">
-					<execute>xterm -e pstree</execute>
+					<execute>tint2conf</execute>
 				</action>
 			</item>
-			<item label="pstree">
+			<item label="Preferred Applications">
 				<action name="Execute">
-					<execute>xterm -e /usr/bin/pstree.x11</execute>
+					<execute>exo-preferred-applications</execute>
 				</action>
 			</item>
-			<item label="pstree">
+			<item label="Removable Drives and Media">
 				<action name="Execute">
-					<execute>xterm -e pstree.x11</execute>
+					<execute>thunar-volman-settings</execute>
 				</action>
 			</item>
-			<item label="Top">
+			<item label="Screen Resolution">
 				<action name="Execute">
-					<execute>xterm -e top</execute>
+					<execute>arandr</execute>
 				</action>
 			</item>
-		</menu>
-		<menu id="38" label="Utilities">
-			<item label="About Xfce">
+			<item label="Wallpaper">
 				<action name="Execute">
-					<execute>xfce4-about</execute>
-				</action>
-			</item>
-			<item label="Character Map">
-				<action name="Execute">
-					<execute>gucharmap</execute>
-				</action>
-			</item>
-			<item label="File Manager">
-				<action name="Execute">
-					<execute>exo-open --launch FileManager</execute>
-				</action>
-			</item>
-			<item label="Info">
-				<action name="Execute">
-					<execute>xterm -e info</execute>
-				</action>
-			</item>
-			<item label="Parcellite">
-				<action name="Execute">
-					<execute>parcellite</execute>
-				</action>
-			</item>
-			<item label="SpaceFM File Search">
-				<action name="Execute">
-					<execute>spacefm</execute>
-				</action>
-			</item>
-			<item label="Terminal Emulator">
-				<action name="Execute">
-					<execute>exo-open --launch TerminalEmulator</execute>
-				</action>
-			</item>
-			<item label="Xarchiver">
-				<action name="Execute">
-					<execute>xarchiver</execute>
-				</action>
-			</item>
-			<item label="Xev">
-				<action name="Execute">
-					<execute>xterm -e xev</execute>
-				</action>
-			</item>
-			<item label="Xkill">
-				<action name="Execute">
-					<execute>xkill</execute>
-				</action>
-			</item>
-			<item label="Xrefresh">
-				<action name="Execute">
-					<execute>xrefresh</execute>
-				</action>
-			</item>
-			<item label="Xsetroot">
-				<action name="Execute">
-					<execute>xsetroot</execute>
+					<execute> nitrogen </execute>
 				</action>
 			</item>
 		</menu>
-		<separator/>
-		<menu id="40" label="OpenBox">
-			<menu id="client-list-menu"/>
-			<item label="Reconfigure">
-				<action name="Reconfigure"/>
-			</item>
-			<separator/>
-			<item label="Exit">
-				<action name="Exit"/>
-			</item>
-		</menu>
+		<item label="Exit">
+			<action name="Execute">
+				<execute> oblogout </execute>
+			</action>
+		</item>
 	</menu>
 </openbox_menu>
