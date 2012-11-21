@@ -31,7 +31,7 @@
     <!-- with Smart placement on a multi-monitor system, try to place new windows
        on: 'Any' - any monitor, 'Mouse' - where the mouse is, 'Active' - where
        the active window is -->
-    <primaryMonitor>1</primaryMonitor>
+    <primaryMonitor>Mouse</primaryMonitor>
     <!-- The monitor where Openbox should place popup dialogs such as the
        focus cycling popup, or the desktop switch popup.  It can be an index
        from 1, specifying a particular monitor.  Or it can be one of the
@@ -39,8 +39,8 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>BlackCoal</name>
-    <titleLayout>NLIMC</titleLayout>
+    <name>Onyx-black</name>
+    <titleLayout>NLDSIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -108,15 +108,14 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>2</number>
+    <number>3</number>
     <firstdesk>1</firstdesk>
     <names>
-      <!-- set names up here if you want to, like this:
-    <name>desktop 1</name>
-    <name>desktop 2</name>
-    -->
+      <name>Desktop1</name>
+      <name>Desktop2</name>
+      <name>Desktop3</name>
     </names>
-    <popupTime>875</popupTime>
+    <popupTime>500</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
        desktops.  Set this to 0 to disable the popup. -->
   </desktops>
@@ -166,10 +165,8 @@
   </dock>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
-    <keybind key="C-A-Left">
-      <action name="DesktopLeft">
-        <wrap>no</wrap>
-      </action>
+    <keybind key="XF86MonBrightnessDown">
+      <action name="DesktopLeft"/>
     </keybind>
     <keybind key="XF86PowerOff">
       <action name="Execute">
@@ -180,58 +177,8 @@
         </startupnotify>
       </action>
     </keybind>
-    <keybind key="C-A-Right">
-      <action name="DesktopRight">
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="C-A-Up">
-      <action name="DesktopUp">
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="C-A-Down">
-      <action name="DesktopDown">
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="S-A-Left">
-      <action name="SendToDesktopLeft">
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="S-A-Right">
-      <action name="SendToDesktopRight">
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="S-A-Up">
-      <action name="SendToDesktopUp">
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="S-A-Down">
-      <action name="SendToDesktopDown">
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="W-F1">
-      <action name="Desktop"/>
-    </keybind>
-    <keybind key="W-F2">
-      <action name="Desktop">
-        <desktop>2</desktop>
-      </action>
-    </keybind>
-    <keybind key="W-F3">
-      <action name="Desktop">
-        <desktop>3</desktop>
-      </action>
-    </keybind>
-    <keybind key="W-F4">
-      <action name="Desktop">
-        <desktop>4</desktop>
-      </action>
+    <keybind key="XF86MonBrightnessUp">
+      <action name="DesktopRight"/>
     </keybind>
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
@@ -239,21 +186,12 @@
     <keybind key="A-F4">
       <action name="Close"/>
     </keybind>
-    <keybind key="A-F2">
+    <keybind key="grave">
       <action name="Execute">
         <command>gmrun</command>
         <startupnotify>
           <enabled>yes</enabled>
           <name>gmrun</name>
-        </startupnotify>
-      </action>
-    </keybind>
-    <keybind key="A-F3">
-      <action name="Execute">
-        <command>~/.config/dmenu/dmenu-bind.sh</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-          <name>dmenu</name>
         </startupnotify>
       </action>
     </keybind>
@@ -293,7 +231,7 @@
         <command>firefox</command>
         <startupnotify>
           <enabled>yes</enabled>
-          <name>Web Browser</name>
+          <name>Minefield Web Browser</name>
         </startupnotify>
       </action>
     </keybind>
@@ -342,6 +280,15 @@
         <startupnotify>
           <enabled>yes</enabled>
           <name>Gnome Media Player</name>
+        </startupnotify>
+      </action>
+    </keybind>
+    <keybind key="W-l">
+      <action name="Execute">
+        <command>slock</command>
+        <startupnotify>
+          <enabled>yes</enabled>
+          <name>lock</name>
         </startupnotify>
       </action>
     </keybind>
@@ -401,7 +348,7 @@
     <keybind key="W-c">
       <action name="MoveToCenter"/>
     </keybind>
-    	<keybind key="XF86AudioRaiseVolume">
+    <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
         <command>amixer set Master 5%+ unmute</command>
       </action>
@@ -418,12 +365,27 @@
     </keybind>
     <keybind key="XF86ScreenSaver">
       <action name="Execute">
-        <command>slock</command>
+        <command>slimlock</command>
       </action>
     </keybind>
     <keybind key="XF86Sleep">
       <action name="Execute">
         <command>sudo pm-suspend</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioPlay">
+      <action name="Execute">
+        <command>ncmpcpp toggle</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioPrev">
+      <action name="Execute">
+        <command>ncmpcpp prev</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioNext">
+      <action name="Execute">
+        <command>ncmpcpp next</command>
       </action>
     </keybind>
   </keyboard>
@@ -432,7 +394,7 @@
     <!-- number of pixels the mouse must move before a drag begins -->
     <doubleClickTime>200</doubleClickTime>
     <!-- in milliseconds (1000 = 1 second) -->
-    <screenEdgeWarpTime>400</screenEdgeWarpTime>
+    <screenEdgeWarpTime>100</screenEdgeWarpTime>
     <!-- Time before changing desktops when the pointer touches the edge of the
        screen while moving a window, in milliseconds (1000 = 1 second).
        Set this to 0 to disable warping -->
@@ -789,13 +751,13 @@
   <showIcons>yes</showIcons>
 </menu>
   <applications>
-	<application class="*">
-		<position>
-		<monitor>1</monitor>
-		</position>
-		<focus>yes</focus>
- 		<maximized>no</maximized>
-	</application>
+    <application class="*">
+      <position>
+        <monitor>1</monitor>
+      </position>
+      <focus>yes</focus>
+      <maximized>no</maximized>
+    </application>
     <!--
   # this is an example with comments through out. use these to make your
   # own rules, but without the comments of course.

@@ -1,0 +1,40 @@
+sw_volume: 91
+audio_device_state:1:ALSA Device
+state: play
+current: 4
+time: 204
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: nan
+playlist_begin
+0:library/Bob Marley & The Wailers/Uprising/00 - Coming In From The Cold.mp3
+1:library/Bob Marley & The Wailers/Uprising/00 - Could You Be Loved.mp3
+2:library/Bob Marley & The Wailers/Survival/00 - Africa Unite.mp3
+3:library/Bob Marley & The Wailers/Survival/00 - Ride Natty Ride.mp3
+4:library/Bob Marley & The Wailers/Survival/00 - So Much Trouble In The World.mp3
+5:library/Bob Marley & The Wailers/Rebel Music/00 - Rat Race.mp3
+6:library/Bob Marley & The Wailers/Rebel Music/00 - Rebel Music.mp3
+7:library/Bob Marley & The Wailers/Rebel Music/00 - Slave Driver.mp3
+8:library/Bob Marley & The Wailers/Rebel Music/00 - War-No More Trouble (Live).mp3
+9:library/Bob Marley & The Wailers/Rastaman Vibration/00 - Crazy Baldhead.mp3
+10:library/Bob Marley & The Wailers/Natty Dread/00 - Lively Up Yourself.mp3
+11:library/Bob Marley & The Wailers/Kaya/00 - Easy Skanking.mp3
+12:library/Bob Marley & The Wailers/Kaya/00 - Is This Love.mp3
+13:library/Bob Marley & The Wailers/Kaya/00 - Misty Morning.mp3
+14:library/Bob Marley & The Wailers/Kaya/00 - Running Away.mp3
+15:library/Bob Marley & The Wailers/Kaya/00 - Sun Is Shining.mp3
+16:library/Bob Marley & The Wailers/Exodus/01 - Natural Mystic.mp3
+17:library/Bob Marley & The Wailers/Exodus/06 - Jamming.mp3
+18:library/Bob Marley & The Wailers/Exodus/08 - Turn Your Lights Down Low.mp3
+19:library/Bob Marley & The Wailers/Exodus/09 - Three Little Birds.mp3
+20:library/Bob Marley & The Wailers/Downloaded/00 - Jamaica Rum.mp3
+21:library/Bob Marley & The Wailers/Confrontation/00 - Buffalo Soldier.mp3
+22:library/Bob Marley & The Wailers/Catch a fire/00 - Concrete Jungle.mp3
+23:library/Bob Marley & The Wailers/Catch a fire/00 - Stir It Up.mp3
+24:library/Bob Marley & The Wailers/Burnin'/00 - Get Up, Stand Up.mp3
+25:library/Bob Marley & The Wailers/Burnin'/02 - Hallelujah Time.mp3
+playlist_end
