@@ -1,7 +1,17 @@
 [core]
 	editor = vim
+[alias]
+        st = status
+        ci = commit
+        co = checkout
+        br = branch
+[color]
+        status = auto
+        branch = audo
 [author]
 	email = sam.mack91@gmail.com
 [user]
 	email = sam.mack91@gmail.com
 	name = Sam Macpherson
+[merge]
+	tool = vimdiff
