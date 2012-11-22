@@ -219,7 +219,7 @@
     </keybind>
     <keybind key="W-f">
       <action name="Execute">
-        <command>spacefm</command>
+        <command>thunar</command>
         <startupnotify>
           <enabled>yes</enabled>
           <name>File Manager</name>
@@ -228,10 +228,10 @@
     </keybind>
     <keybind key="W-w">
       <action name="Execute">
-        <command>firefox</command>
+        <command>chromium</command>
         <startupnotify>
           <enabled>yes</enabled>
-          <name>Minefield Web Browser</name>
+          <name>Web Browser</name>
         </startupnotify>
       </action>
     </keybind>
@@ -276,10 +276,17 @@
     </keybind>
     <keybind key="W-m">
       <action name="Execute">
-        <command>gnome-mplayer</command>
+        <command>mpd</command>
         <startupnotify>
           <enabled>yes</enabled>
-          <name>Gnome Media Player</name>
+          <name>Media Play Daemon</name>
+        </startupnotify>
+      </action>
+      <action name="Execute">
+        <command>lxterminal -e ncmpcpp</command>
+        <startupnotify>
+          <enabled>yes</enabled>
+          <name>ncmpcpp</name>
         </startupnotify>
       </action>
     </keybind>
