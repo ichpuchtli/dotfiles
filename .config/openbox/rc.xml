@@ -186,7 +186,7 @@
     <keybind key="A-F4">
       <action name="Close"/>
     </keybind>
-    <keybind key="grave">
+    <keybind key="W-grave">
       <action name="Execute">
         <command>gmrun</command>
         <startupnotify>

@@ -59,7 +59,23 @@ nmap <silent> <Leader>gw :vimgrep /<C-r><C-w>/ %<CR>:ccl<CR>:cwin<CR><C-W>J:nohl
 
 nmap <silent> <C-o> :NERDTreeToggle<CR>
 
+nnoremap ; :
+
+" =================  Status Line  ====================
+
+if has('statusline')
+        "set laststatus=0
+        "set statusline=%<%f\
+        "set statusline+=%w%h%m%r
+        "set statusline+=%{fugitive#statusline()}
+        "set statusline+=\ [%{&ff}/%Y] 
+        "set statusline+=\ [%{getcwd()}]
+        "set statusline+=%=%-14.(%l,%c%V%)\ %p%%
+
+endif
+
 " ================ General Config ====================
+
 
 " Show (partial) command in status line.
 set showcmd		

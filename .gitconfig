@@ -7,7 +7,7 @@
         br = branch
 [color]
         status = auto
-        branch = audo
+        branch = auto
 [author]
 	email = sam.mack91@gmail.com
 [user]
