@@ -18,21 +18,6 @@
 					<execute>gparted-pkexec</execute>
 				</action>
 			</item>
-			<item label="GVim">
-				<action name="Execute">
-					<execute>gvim</execute>
-				</action>
-			</item>
-			<item label="Guake Terminal">
-				<action name="Execute">
-					<execute>guake</execute>
-				</action>
-			</item>
-			<item label="Leafpad">
-				<action name="Execute">
-					<execute>leafpad</execute>
-				</action>
-			</item>
 			<item label="Network Connections">
 				<action name="Execute">
 					<execute>nm-connection-editor</execute>
@@ -41,16 +26,6 @@
 			<item label="Redshift">
 				<action name="Execute">
 					<execute>gtk-redshift</execute>
-				</action>
-			</item>
-			<item label="SpaceFM File Search">
-				<action name="Execute">
-					<execute>spacefm</execute>
-				</action>
-			</item>
-			<item label="Thunar File Manager">
-				<action name="Execute">
-					<execute>thunar</execute>
 				</action>
 			</item>
 			<item label="Xfburn">
@@ -80,9 +55,14 @@
 				<execute>filezilla</execute>
 			</action>
 		</item>
-		<item label="Galculator">
+		<item label="ncmpcpp">
 			<action name="Execute">
-				<execute>galculator</execute>
+				<execute>lxterminal -e ~/.ncmpcpp/start.sh</execute>
+			</action>
+		</item>
+		<item label="rtorrent">
+			<action name="Execute">
+				<execute>lxterminal -e  ~/.rtorrent.sh</execute>
 			</action>
 		</item>
 		<separator/>
@@ -138,6 +118,59 @@
 					<action name="Restart"/>
 				</item>
 			</menu>
+			<menu id="77" label="ncmpcpp Config">
+				<item label="Edit .ncmpcpp/keys">
+					<action name="Execute">
+						<execute> gvim ~/.ncmpcpp/keys </execute>
+					</action>
+				</item>
+				<item label="Edit .ncmpcpp/config">
+					<action name="Execute">
+						<execute> gvim ~/.ncmpcpp/config </execute>
+					</action>
+				</item>
+				<item label="Edit .mplayer">
+					<action name="Execute">
+						<execute> gvim ~/.mplayer</execute>
+					</action>
+				</item>
+				<item label="Kill ncmpcpp &amp; mpd">
+					<action name="Execute">
+						<execute>lxterminal -e ~/.ncmpcpp/stop.sh</execute>
+						<execute>lxterminal -e ~/.ncmpcpp/stop.sh</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="66" label="rtorrent Config">
+				<item label="Edit .rtorrent.rc">
+					<action name="Execute">
+						<execute> gvim ~/.rtorrent.rc </execute>
+					</action>
+				</item>
+				<item label="rm .rtorrent/*">
+					<action name="Execute">
+						<execute>rm .rtorrent/*</execute>
+					</action>
+				</item>
+				<item label="Kill rtorrent">
+					<action name="Execute">
+						<!-- <execute> screen clean up </execute> -->
+						<execute> pkill rtorrent </execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="36-993443" label="Tmux">
+				<item label="Edit .tmux.conf">
+					<action name="Execute">
+						<execute>gvim ~/.tmux.conf</execute>
+					</action>
+				</item>
+				<item label="Kill tmux">
+					<action name="Execute">
+						<execute>tmux kill-server</execute>
+					</action>
+				</item>
+			</menu>
 			<menu id="38" label="Conky Config">
 				<item label="Edit .conkyrc">
 					<action name="Execute">
@@ -150,6 +183,16 @@
 					</action>
 				</item>
 			</menu>
+			<item label="edit .vimrc">
+				<action name="Execute">
+					<execute>gvim ~/.vimrc</execute>
+				</action>
+			</item>
+			<item label="netcfg -r">
+				<action name="Execute">
+					<execute>lxterminal -e sudo netcfg -r home</execute>
+				</action>
+			</item>
 			<item label="Customize Look and Feel">
 				<action name="Execute">
 					<execute>lxappearance</execute>
@@ -173,11 +216,6 @@
 			<item label="Keyboard and Mouse">
 				<action name="Execute">
 					<execute>lxinput</execute>
-				</action>
-			</item>
-			<item label="Panel tint2">
-				<action name="Execute">
-					<execute>tint2conf</execute>
 				</action>
 			</item>
 			<item label="Preferred Applications">

@@ -26,38 +26,45 @@ no_buffers yes
 uppercase no
 cpu_avg_samples 2
 override_utf8_locale no
-color1 red
-color2 gray
+
 ##############################################
 #  Output
 ##############################################
 TEXT
-CPU: $alignr${cpu cpu0}% 
+CPU: $alignc ${threads}/${running_threads} $alignr ${cpu cpu0}% 
 ${cpubar cpu0}
 RAM: $alignr$mem/$memmax 
 $membar
-ext4: $alignr ${fs_used /}/${fs_size /}
+${fs_type /}: $alignr ${fs_used /}/${fs_size /}
 ${fs_bar /}
 
 ${font sans-serif:bold:size=8}SYSTEM ${hr 2}
 ${font sans-serif:normal:size=8}$sysname $kernel $alignr $machine
 Host:$alignr$nodename
 Uptime:$alignr$uptime
+Date: ${alignr} ${time %a, %b %d, %Y}
+Time: ${alignr} ${time %I}:${time %M}${time %p}
 
 ${font sans-serif:bold:size=8}TOP PROCESSES ${hr 2}
-${font sans-serif:normal:size=8}${top_mem name 1}${alignr}${top mem 1} %
-${top_mem name 2}${alignr}${top mem 2} %
-$font${top_mem name 3}${alignr}${top mem 3} %
-$font${top_mem name 4}${alignr}${top mem 4} %
+${font sans-serif:normal:size=8}${top_mem name 1}${alignr}${top mem 1}%
+${top_mem name 2}${alignr}${top mem 2}%
+${top_mem name 3}${alignr}${top mem 3}%
+${top_mem name 4}${alignr}${top mem 4}%
 
 ${font sans-serif:bold:size=8}NETWORK ${hr 2}
-${font Santana:normal:size=8}Gateway Addr: ${alignr}${gw_ip}
-${font Santana:normal:size=8}Local Addr: $alignr${addr wlan0}
-${font Santana:normal:size=8}Public Addr: ${alignr}${color2}${execi 1000000 wget http://checkip.dyndns.org/ -q -O - | grep -Eo '\<[[:digit:]]{1,3}(\.[[:digit:]]{1,3}){3}\>'}
-
+${font sans-serif:normal:size=8}Gateway: ${alignr}${gw_ip}
+${font sans-serif:normal:size=8}Local: $alignr${addr wlan0}
+${font sans-serif:normal:size=8}ESSID: ${alignr}${wireless_essid wlan0}
 ${downspeedgraph wlan0}
 Down:${downspeed wlan0} $alignr Total: ${totaldown wlan0}
-
+${if_running mpd}
+${font sans-serif:bold:size=8}MPLAYER - ${execi 1 amixer sget Master,0 | egrep -o '[0-9]+%'} ${hr 2}
+${font sans-serif:normal:size=8}${mpd_album 30}
+${mpd_artist 30}
+${mpd_title 30}
+${mpd_elapsed} - ${mpd_status} ${alignr} ${mpd_length}
+${mpd_bar}
+$endif
 ${font sans-serif:bold:size=8}SHORTCUT KEYS ${hr 2}
 ${font sans-serif:normal:size=8}Super+a$alignr Toggle Maximize
 Super+Arrow$alignr Move
