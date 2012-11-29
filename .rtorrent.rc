@@ -2,6 +2,14 @@
 # ~/.rtorrent.rc and enable/modify the options as needed. Remember to
 # uncomment the options you wish to enable.
 
+### Vi Keys and Colors ###
+
+done_fg_color = 2
+#done_bg_color = 3
+active_fg_color = 6
+#done_bg_color = 3
+
+
 # Maximum and minimum number of peers to connect to per torrent.
 min_peers = 20
 max_peers = 30
@@ -73,7 +81,7 @@ use_udp_trackers = yes
 # "auto" (start and stop DHT as needed), or "on" (start DHT immediately).
 # The default is "off". For DHT to work, a session directory must be defined.
 # 
-dht = off
+#dht = off
 
 # UDP port to use for DHT. 
 # 

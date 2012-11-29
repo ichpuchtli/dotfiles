@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc">
   <resistance>
     <strength>10</strength>
@@ -140,7 +141,7 @@
      Many programs reserve space automatically, but you can use this in other
      cases. -->
   <margins>
-    <top>2</top>
+    <top>1</top>
     <bottom>0</bottom>
     <left>0</left>
     <right>0</right>
@@ -276,14 +277,7 @@
     </keybind>
     <keybind key="W-m">
       <action name="Execute">
-        <command>mpd</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-          <name>Media Play Daemon</name>
-        </startupnotify>
-      </action>
-      <action name="Execute">
-        <command>lxterminal -e ncmpcpp</command>
+        <command>lxterminal -e ~/.ncmpcpp/start.sh</command>
         <startupnotify>
           <enabled>yes</enabled>
           <name>ncmpcpp</name>
@@ -397,7 +391,7 @@
     </keybind>
   </keyboard>
   <mouse>
-    <dragThreshold>8</dragThreshold>
+    <dragThreshold>21</dragThreshold>
     <!-- number of pixels the mouse must move before a drag begins -->
     <doubleClickTime>200</doubleClickTime>
     <!-- in milliseconds (1000 = 1 second) -->

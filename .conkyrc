@@ -1,77 +1,69 @@
-background yes
+# Use Xft?
 use_xft yes
-xftfont monospace:size=9
-xftalpha 1
-update_interval 1.0
+xftfont Trebuchet MS:size=9
+xftalpha 0.8
+text_buffer_size 4096
+background no
+# Update interval in seconds
+update_interval 0.5
+xftalpha 0.8
+own_window_argb_visual yes
+# This is the number of times Conky will update before quitting.
+# Set to zero to run forever.
 total_run_times 0
+
+# Create own window instead of using desktop (required in nautilus)
 own_window yes
 own_window_transparent yes
 own_window_type desktop
 own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
-own_window_colour black
+
+# Use double buffering (reduces flicker, may not work for everyone)
 double_buffer yes
-minimum_size 1 1
-maximum_width 240
+
+# Minimum size of text area
+minimum_size 180 0
+
+# Draw shades?
 draw_shades no
+
+# Draw outlines?
 draw_outline no
+
+# Draw borders around text
 draw_borders no
-draw_graph_borders no
-default_color gray
-default_shade_color 000000
-default_outline_color d9d7d6
-alignment tr
-gap_x 12
-gap_y 12
-no_buffers yes
+
+# Default colors and also border colors
+# default_color white
+# own_window_colour white
+
+
+# Subtract file system buffers from used memory?
+#no_buffers yes
+
+# set to yes if you want all text to be in uppercase
 uppercase no
+
+# number of cpu samples to average
+# set to 1 to disable averaging
 cpu_avg_samples 2
-override_utf8_locale no
 
-##############################################
-#  Output
-##############################################
+# number of net samples to average
+# set to 1 to disable averaging
+net_avg_samples 2
+
+# Force UTF8? note that UTF8 support required XFT
+override_utf8_locale yes
+
+# Add spaces to keep things from moving about?  This only affects certain objects.
+use_spacer none
+
+#position
+gap_x 10
+gap_y 5
+alignment bottom_left
+
+#${offset 15}${color 1693a5}GHZ  ${offset 9}${color aaaaaa}${freq_g}
+
 TEXT
-CPU: $alignc ${threads}/${running_threads} $alignr ${cpu cpu0}% 
-${cpubar cpu0}
-RAM: $alignr$mem/$memmax 
-$membar
-${fs_type /}: $alignr ${fs_used /}/${fs_size /}
-${fs_bar /}
-
-${font sans-serif:bold:size=8}SYSTEM ${hr 2}
-${font sans-serif:normal:size=8}$sysname $kernel $alignr $machine
-Host:$alignr$nodename
-Uptime:$alignr$uptime
-Date: ${alignr} ${time %a, %b %d, %Y}
-Time: ${alignr} ${time %I}:${time %M}${time %p}
-
-${font sans-serif:bold:size=8}TOP PROCESSES ${hr 2}
-${font sans-serif:normal:size=8}${top_mem name 1}${alignr}${top mem 1}%
-${top_mem name 2}${alignr}${top mem 2}%
-${top_mem name 3}${alignr}${top mem 3}%
-${top_mem name 4}${alignr}${top mem 4}%
-
-${font sans-serif:bold:size=8}NETWORK ${hr 2}
-${font sans-serif:normal:size=8}Gateway: ${alignr}${gw_ip}
-${font sans-serif:normal:size=8}Local: $alignr${addr wlan0}
-${font sans-serif:normal:size=8}ESSID: ${alignr}${wireless_essid wlan0}
-${downspeedgraph wlan0}
-Down:${downspeed wlan0} $alignr Total: ${totaldown wlan0}
-${if_running mpd}
-${font sans-serif:bold:size=8}MPLAYER - ${execi 1 amixer sget Master,0 | egrep -o '[0-9]+%'} ${hr 2}
-${font sans-serif:normal:size=8}${mpd_album 30}
-${mpd_artist 30}
-${mpd_title 30}
-${mpd_elapsed} - ${mpd_status} ${alignr} ${mpd_length}
-${mpd_bar}
-$endif
-${font sans-serif:bold:size=8}SHORTCUT KEYS ${hr 2}
-${font sans-serif:normal:size=8}Super+a$alignr Toggle Maximize
-Super+Arrow$alignr Move
-Alt+Super+Arrow$alignr Resize
-
-Super+f$alignr File Manager
-Super+m$alignr Media Player
-Super+w$alignr Web Browser
-Super+q$alignr Force Quit
-Super+r$alignr Read the DOC
+${voffset 1}${offset 12}${font Ubuntu:pixelsize=10}${color 1693a5}TIME ${offset 9}${color aaaaaa}${time %I}:${time %M}${time %p}${offset 15}${color 1693a5}DATE ${offset 9}${color aaaaaa}${time %A %d %B}${offset 15}${color 1693a5}HD ${offset 9}${color aaaaaa}${fs_free /} / ${fs_size /}${offset 15}${color 1693a5}RAM ${offset 9}${color aaaaaa}$mem / $memmax${offset 15}${color 1693a5}CPU ${offset 9}${color aaaaaa}${cpu cpu0}${offset 15}${color 1693a5}${if_up wlan0}WIFI ${offset 9}${color aaaaaa}${downspeed wlan0}/${totaldown wlan0}    ${downspeedgraph wlan0 9, 50}${endif}${color 1693a5}${offset 15}VOL ${offset 9}${color aaaaaa}${execi 1 amixer sget Master,0 | egrep -o '[0-9]+%'}${if_running mpd}${offset 15}${color 1693a5}MPD ${offset 9}${color aaaaaa}${mpd_smart}${endif}

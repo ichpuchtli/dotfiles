@@ -1,7 +1,10 @@
 #!/bin/sh
 
-#Stop ncmpcpp to prevent song being resumed on start up
+# Stop ncmpcpp to prevent song being resumed on start up
 ncmpcpp stop
 
-# Finally kill mpd
+# kill mpd
 mpd --kill
+
+# kill tmux session instance
+tmux kill-session -t ncmpcpp

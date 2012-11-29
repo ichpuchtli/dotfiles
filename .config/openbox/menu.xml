@@ -2,38 +2,7 @@
 <openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
 	<menu id="root-menu" label="OpenBox 3">
 		<menu execute="~/.config/openbox/pipemenus/obpipemenu-places ~/" id="places" label="Places"/>
-		<menu id="tools" label="Applications">
-			<item label="Disks">
-				<action name="Execute">
-					<execute>gnome-disks</execute>
-				</action>
-			</item>
-			<item label="FireFox">
-				<action name="Execute">
-					<execute>firefox</execute>
-				</action>
-			</item>
-			<item label="GParted">
-				<action name="Execute">
-					<execute>gparted-pkexec</execute>
-				</action>
-			</item>
-			<item label="Network Connections">
-				<action name="Execute">
-					<execute>nm-connection-editor</execute>
-				</action>
-			</item>
-			<item label="Redshift">
-				<action name="Execute">
-					<execute>gtk-redshift</execute>
-				</action>
-			</item>
-			<item label="Xfburn">
-				<action name="Execute">
-					<execute>xfburn</execute>
-				</action>
-			</item>
-		</menu>
+		<!--		<menu execute="cat ~/.cache/applications.xml" id="desktop-menu" label="Apps"/> -->
 		<separator/>
 		<item label="Terminal">
 			<action name="Execute">
@@ -57,12 +26,12 @@
 		</item>
 		<item label="ncmpcpp">
 			<action name="Execute">
-				<execute>lxterminal -e ~/.ncmpcpp/start.sh</execute>
+				<execute>lxterminal --geometry=150x50 -e ~/.ncmpcpp/start.sh</execute>
 			</action>
 		</item>
 		<item label="rtorrent">
 			<action name="Execute">
-				<execute>lxterminal -e  ~/.rtorrent.sh</execute>
+				<execute>lxterminal --geometry=105x30 -e  ~/.rtorrent.sh</execute>
 			</action>
 		</item>
 		<separator/>
@@ -198,34 +167,9 @@
 					<execute>lxappearance</execute>
 				</action>
 			</item>
-			<item label="Notifications">
-				<action name="Execute">
-					<execute>xfce4-notifyd-config</execute>
-				</action>
-			</item>
-			<item label="Dconf Editor">
-				<action name="Execute">
-					<execute>dconf-editor</execute>
-				</action>
-			</item>
-			<item label="Guake Preferences">
-				<action name="Execute">
-					<execute>guake-prefs</execute>
-				</action>
-			</item>
 			<item label="Keyboard and Mouse">
 				<action name="Execute">
 					<execute>lxinput</execute>
-				</action>
-			</item>
-			<item label="Preferred Applications">
-				<action name="Execute">
-					<execute>exo-preferred-applications</execute>
-				</action>
-			</item>
-			<item label="Removable Drives and Media">
-				<action name="Execute">
-					<execute>thunar-volman-settings</execute>
 				</action>
 			</item>
 			<item label="Screen Resolution">
