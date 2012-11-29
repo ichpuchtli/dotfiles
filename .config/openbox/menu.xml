@@ -106,7 +106,6 @@
 				<item label="Kill ncmpcpp &amp; mpd">
 					<action name="Execute">
 						<execute>lxterminal -e ~/.ncmpcpp/stop.sh</execute>
-						<execute>lxterminal -e ~/.ncmpcpp/stop.sh</execute>
 					</action>
 				</item>
 			</menu>
@@ -123,8 +122,7 @@
 				</item>
 				<item label="Kill rtorrent">
 					<action name="Execute">
-						<!-- <execute> screen clean up </execute> -->
-						<execute> pkill rtorrent </execute>
+						<execute>tmux kill-session -t rtorrent</execute>
 					</action>
 				</item>
 			</menu>
