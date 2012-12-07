@@ -180,6 +180,21 @@
     <keybind key="XF86MonBrightnessUp">
       <action name="DesktopRight"/>
     </keybind>
+    <keybind key="XF86KbdBrightnessDown">
+      <action name="Execute">
+        <command>~/.config/nitrogen/wallsetswap.sh --next</command>
+      </action>
+    </keybind>
+    <keybind key="XF86KbdBrightnessUp">
+      <action name="Execute">
+        <command>~/.config/nitrogen/wallsetswap.sh --prev</command>
+      </action>
+    </keybind>
+    <keybind key="XF86LaunchA">
+      <action name="Execute">
+        <command>~/.config/nitrogen/wallswap.sh</command>
+      </action>
+    </keybind>
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
