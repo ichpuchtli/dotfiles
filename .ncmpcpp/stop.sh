@@ -5,6 +5,3 @@ ncmpcpp stop
 
 # kill mpd
 mpd --kill
-
-# kill tmux session instance
-tmux kill-session -t ncmpcpp

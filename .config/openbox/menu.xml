@@ -26,12 +26,12 @@
 		</item>
 		<item label="ncmpcpp">
 			<action name="Execute">
-				<execute>lxterminal --geometry=150x50 -e ~/.ncmpcpp/start.sh</execute>
+				<execute>lxterminal -e ~/.ncmpcpp/start.sh</execute>
 			</action>
 		</item>
 		<item label="rtorrent">
 			<action name="Execute">
-				<execute>lxterminal --geometry=105x30 -e  ~/.rtorrent.sh</execute>
+				<execute>lxterminal -e  ~/.rtorrent.sh</execute>
 			</action>
 		</item>
 		<separator/>
@@ -175,11 +175,28 @@
 					<execute>arandr</execute>
 				</action>
 			</item>
-			<item label="Wallpaper">
-				<action name="Execute">
-					<execute> nitrogen </execute>
-				</action>
-			</item>
+			<menu id="36-963123" label="Wallpaper">
+				<item label="Nitrogen">
+					<action name="Execute">
+						<execute>nitrogen</execute>
+					</action>
+				</item>
+				<item label="wallsetswap --prev">
+					<action name="Execute">
+						<execute>~/.config/nitrogen/wallsetswap.sh --prev</execute>
+					</action>
+				</item>
+				<item label="wallswap">
+					<action name="Execute">
+						<execute>~/.config/nitrogen/wallswap.sh</execute>
+					</action>
+				</item>
+				<item label="wallsetswap --next">
+					<action name="Execute">
+						<execute>~/.config/nitrogen/wallsetswap.sh --next</execute>
+					</action>
+				</item>
+			</menu>
 		</menu>
 		<item label="Exit">
 			<action name="Execute">

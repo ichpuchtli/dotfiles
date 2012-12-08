@@ -19,9 +19,6 @@ HISTFILE=~/.zsh_history
 
 export EDITOR=vim
 
-[ ! "$UID" = "0" ] && archbey -c white
-[  "$UID" = "0" ] && archbey -c green
-
 if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi

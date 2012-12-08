@@ -165,32 +165,23 @@
   </dock>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
-    <keybind key="XF86MonBrightnessDown">
+    <keybind key="W-1">
       <action name="DesktopLeft"/>
     </keybind>
-    <keybind key="XF86PowerOff">
-      <action name="Execute">
-        <command>oblogout</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-          <name>oblogout</name>
-        </startupnotify>
-      </action>
-    </keybind>
-    <keybind key="XF86MonBrightnessUp">
+    <keybind key="W-2">
       <action name="DesktopRight"/>
     </keybind>
-    <keybind key="XF86KbdBrightnessDown">
+    <keybind key="W-4">
       <action name="Execute">
         <command>~/.config/nitrogen/wallsetswap.sh --next</command>
       </action>
     </keybind>
-    <keybind key="XF86KbdBrightnessUp">
+    <keybind key="W-3">
       <action name="Execute">
         <command>~/.config/nitrogen/wallsetswap.sh --prev</command>
       </action>
     </keybind>
-    <keybind key="XF86LaunchA">
+    <keybind key="F2">
       <action name="Execute">
         <command>~/.config/nitrogen/wallswap.sh</command>
       </action>
@@ -354,42 +345,27 @@
     <keybind key="W-c">
       <action name="MoveToCenter"/>
     </keybind>
-    <keybind key="XF86AudioRaiseVolume">
+    <keybind key="F9">
       <action name="Execute">
         <command>amixer set Master 5%+ unmute</command>
       </action>
     </keybind>
-    <keybind key="XF86AudioLowerVolume">
+    <keybind key="F10">
       <action name="Execute">
         <command>amixer set Master 5%- unmute</command>
       </action>
     </keybind>
-    <keybind key="XF86AudioMute">
-      <action name="Execute">
-        <command>amixer set Master toggle</command>
-      </action>
-    </keybind>
-    <keybind key="XF86ScreenSaver">
-      <action name="Execute">
-        <command>slimlock</command>
-      </action>
-    </keybind>
-    <keybind key="XF86Sleep">
-      <action name="Execute">
-        <command>sudo pm-suspend</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioPlay">
+    <keybind key="F11">
       <action name="Execute">
         <command>ncmpcpp toggle</command>
       </action>
     </keybind>
-    <keybind key="XF86AudioPrev">
+    <keybind key="F10">
       <action name="Execute">
         <command>ncmpcpp prev</command>
       </action>
     </keybind>
-    <keybind key="XF86AudioNext">
+    <keybind key="F12">
       <action name="Execute">
         <command>ncmpcpp next</command>
       </action>

@@ -5,7 +5,7 @@ xftalpha 0.8
 text_buffer_size 4096
 background no
 # Update interval in seconds
-update_interval 0.5
+update_interval 2
 xftalpha 0.8
 own_window_argb_visual yes
 # This is the number of times Conky will update before quitting.
@@ -63,7 +63,5 @@ gap_x 10
 gap_y 5
 alignment bottom_left
 
-#${offset 15}${color 1693a5}GHZ  ${offset 9}${color aaaaaa}${freq_g}
-
 TEXT
-${voffset 1}${offset 12}${font Ubuntu:pixelsize=10}${color 1693a5}TIME ${offset 9}${color aaaaaa}${time %I}:${time %M}${time %p}${offset 15}${color 1693a5}DATE ${offset 9}${color aaaaaa}${time %A %d %B}${offset 15}${color 1693a5}HD ${offset 9}${color aaaaaa}${fs_free /} / ${fs_size /}${offset 15}${color 1693a5}RAM ${offset 9}${color aaaaaa}$mem / $memmax${offset 15}${color 1693a5}CPU ${offset 9}${color aaaaaa}${if_match ${cpu cpu0}<10}0${endif}${cpu cpu0}${color 1693a5}${offset 15}VOL ${offset 9}${color aaaaaa}${execi 1 amixer sget Master,0 | egrep -o '[0-9]+%'}${offset 15}${color 1693a5}${if_up wlan0}WIFI ${offset 9}${color aaaaaa}${downspeed wlan0}/${totaldown wlan0}    ${downspeedgraph wlan0 9, 50}${endif}${if_running mpd}${offset 15}${color 1693a5}MPD ${offset 9}${color aaaaaa}${mpd_smart}${endif}
+${voffset 1}${offset 12}${font Ubuntu:pixelsize=10}${color 1693a5}TIME ${offset 9}${color aaaaaa}${time %I}:${time %M}${time %p}${offset 15}${color 1693a5}DATE ${offset 9}${color aaaaaa}${time %a %d %b}${offset 15}${color 1693a5}HD ${offset 9}${color aaaaaa}${fs_free /}${offset 15}${color 1693a5}RAM ${offset 9}${color aaaaaa}$mem${offset 15}${color 1693a5}CPU ${offset 9}${color aaaaaa}${if_match ${cpu cpu0}<10}0${endif}${cpu cpu0}${color 1693a5}${offset 15}VOL ${offset 9}${color aaaaaa}${execi 1 amixer sget Master,0 | egrep -o '[0-9]+%'}${offset 15}${color 1693a5}POWER ${offset 9}${color aaaaaa}${battery_percent BAT1}${if_running mpd}${offset 15}${color 1693a5}MPD ${offset 9}${color aaaaaa}${mpd_smart}${endif}
