@@ -1,13 +1,7 @@
-/home/sam/.screenlayout/default.sh&
-#(sleep 3 && /usr/bin/nm-applet --sm-disable) &
-#tint2 &
-#volumeicon -b &
-nitrogen --restore &
 #for i in {1..3}; do openbox-menu; done &
-xcompmgr &
+/home/sam/.screenlayout/default.sh
 guake &
-(sleep 1 && conky -q) &
-#xbacklight -set 100 &
-#/usr/bin/synclient TouchpadOff=1 &
-#batti &
-#fbxkb &
+xcompmgr &
+conky -q &
+nitrogen --restore &
+thunar --daemon

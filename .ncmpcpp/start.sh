@@ -15,8 +15,8 @@ tmux has-session -t $SESH
 if [ ! $? -eq 0 ]; then
 
     tmux new-session -d -s $SESH 
-    tmux new-window -t $SESH 'ncmpcpp --screen playlist'
-    tmux split-window -h -d -p 70 -t $SESH 'ncmpcpp --screen media-library'
+    tmux new-window -t $SESH 'ncmpcpp --screen browser'
+    tmux split-window -h -d -p 70 -t $SESH 'ncmpcpp --screen playlist'
 
 fi
 

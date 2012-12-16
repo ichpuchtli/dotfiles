@@ -69,7 +69,7 @@ playlist_disable_highlight_delay = "0"
 ## Note: colors can be nested.
 ##
 
-song_list_format = "{$8(%l)$9 }{%a - }{%t}|{$8%f$9}"
+song_list_format = "{$8(%l)$9 }{%a - }{%r}{%t}|{$8%f$9}"
 
 song_library_format = "{%n - }{%t}|{%f}"
 
@@ -100,7 +100,7 @@ selected_item_suffix = "$9"
 ## - color is optional (if you want the default one, type [])
 ##
 #
-song_columns_list_format = "(6)[white]{l} (15)[cyan]{a} (35)[white]{b} (53)[cyan]{t}"
+song_columns_list_format = "(30)[cyan]{t} (30)[white]{a} (30)[cyan]{b} (5)[white]{l} (5)[cyan]{y}"
 #
 ##### various settings #####
 #

@@ -2,11 +2,16 @@
 <openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
 	<menu id="root-menu" label="OpenBox 3">
 		<menu execute="~/.config/openbox/pipemenus/obpipemenu-places ~/" id="places" label="Places"/>
-		<!--		<menu execute="cat ~/.cache/applications.xml" id="desktop-menu" label="Apps"/> -->
+		<!-- <menu execute="cat ~/.cache/applications.xml" id="desktop-menu" label="Apps"/> -->
 		<separator/>
 		<item label="Terminal">
 			<action name="Execute">
 				<execute>lxterminal</execute>
+			</action>
+		</item>
+		<item label="LibreOffice Calc">
+			<action name="Execute">
+				<execute>localc</execute>
 			</action>
 		</item>
 		<item label="Chromium">
@@ -17,6 +22,11 @@
 		<item label="Htop">
 			<action name="Execute">
 				<execute>lxterminal -e htop</execute>
+			</action>
+		</item>
+		<item label="VirtualBox">
+			<action name="Execute">
+				<execute>virtualbox</execute>
 			</action>
 		</item>
 		<item label="FileZilla">
@@ -35,35 +45,65 @@
 			</action>
 		</item>
 		<separator/>
+		<menu id="root-menu-692436" label="Volume">
+                        <item label="0%">
+                                <action name="Execute">
+                                        <execute>amixer set Master 0% </execute>
+                                </action>
+                        </item>
+                        <item label="10%">
+                                <action name="Execute">
+                                        <execute>amixer set Master 10% </execute>
+                                </action>
+                        </item>
+                        <item label="20%">
+                                <action name="Execute">
+                                        <execute>amixer set Master 20% </execute>
+                                </action>
+                        </item>
+                        <item label="30%">
+                                <action name="Execute">
+                                        <execute>amixer set Master 30% </execute>
+                                </action>
+                        </item>
+                        <item label="40%">
+                                <action name="Execute">
+                                        <execute>amixer set Master 40% </execute>
+                                </action>
+                        </item>
+                        <item label="50%">
+                                <action name="Execute">
+                                        <execute>amixer set Master 50% </execute>
+                                </action>
+                        </item>
+                        <item label="60%">
+                                <action name="Execute">
+                                        <execute>amixer set Master 60% </execute>
+                                </action>
+                        </item>
+                        <item label="70%">
+                                <action name="Execute">
+                                        <execute>amixer set Master 70% </execute>
+                                </action>
+                        </item>
+                        <item label="80%">
+                                <action name="Execute">
+                                        <execute>amixer set Master 80% </execute>
+                                </action>
+                        </item>
+                        <item label="90%">
+                                <action name="Execute">
+                                        <execute>amixer set Master 90% </execute>
+                                </action>
+                        </item>
+                        <item label="100%">
+                                <action name="Execute">
+                                        <execute>amixer set Master 100% </execute>
+                                </action>
+                        </item>
+		</menu>
 		<menu id="36" label="Settings">
 			<menu id="37" label="OpenBox">
-				<menu id="root-menu-891528" label="Eye Candy">
-					<item label="No effects">
-						<action name="Execute">
-							<execute> ~/.config/openbox/scripts/xcompmgr.sh unset </execute>
-						</action>
-					</item>
-					<item label="Transparency">
-						<action name="Execute">
-							<execute> ~/.config/openbox/scripts/xcompmgr.sh set </execute>
-						</action>
-					</item>
-					<item label="Transparency, fading">
-						<action name="Execute">
-							<execute> ~/.config/openbox/scripts/xcompmgr.sh setshaded </execute>
-						</action>
-					</item>
-					<item label="Transparency, fading shadows">
-						<action name="Execute">
-							<execute> ~/.config/openbox/scripts/xcompmgr.sh setshadowshade </execute>
-						</action>
-					</item>
-				</menu>
-				<item label="Edit autostart">
-					<action name="Execute">
-						<execute>gvim ~/.config/openbox/autostart</execute>
-					</action>
-				</item>
 				<item label="Key Editor">
 					<action name="Execute">
 						<execute> obkey </execute>
@@ -79,12 +119,27 @@
 						<execute> obmenu </execute>
 					</action>
 				</item>
-				<separator/>
-				<item label="Reconfigure">
-					<action name="Reconfigure"/>
+			</menu>
+			<menu id="root-menu-891528" label="Eye Candy">
+				<item label="No effects">
+					<action name="Execute">
+						<execute> ~/.config/openbox/scripts/xcompmgr.sh unset </execute>
+					</action>
 				</item>
-				<item label="Restart">
-					<action name="Restart"/>
+				<item label="Transparency">
+					<action name="Execute">
+						<execute> ~/.config/openbox/scripts/xcompmgr.sh set </execute>
+					</action>
+				</item>
+				<item label="Transparency, fading">
+					<action name="Execute">
+						<execute> ~/.config/openbox/scripts/xcompmgr.sh setshaded </execute>
+					</action>
+				</item>
+				<item label="Transparency, fading shadows">
+					<action name="Execute">
+						<execute> ~/.config/openbox/scripts/xcompmgr.sh setshadowshade </execute>
+					</action>
 				</item>
 			</menu>
 			<menu id="77" label="ncmpcpp Config">
@@ -103,56 +158,20 @@
 						<execute> gvim ~/.mplayer</execute>
 					</action>
 				</item>
-				<item label="Kill ncmpcpp &amp; mpd">
-					<action name="Execute">
-						<execute>lxterminal -e ~/.ncmpcpp/stop.sh</execute>
-					</action>
-				</item>
 			</menu>
-			<menu id="66" label="rtorrent Config">
-				<item label="Edit .rtorrent.rc">
-					<action name="Execute">
-						<execute> gvim ~/.rtorrent.rc </execute>
-					</action>
-				</item>
-				<item label="rm .rtorrent/*">
-					<action name="Execute">
-						<execute>rm .rtorrent/*</execute>
-					</action>
-				</item>
-				<item label="Kill rtorrent">
-					<action name="Execute">
-						<execute>tmux kill-session -t rtorrent</execute>
-					</action>
-				</item>
-			</menu>
-			<menu id="36-993443" label="Tmux">
-				<item label="Edit .tmux.conf">
-					<action name="Execute">
-						<execute>gvim ~/.tmux.conf</execute>
-					</action>
-				</item>
-				<item label="Kill tmux">
-					<action name="Execute">
-						<execute>tmux kill-server</execute>
-					</action>
-				</item>
-			</menu>
-			<menu id="38" label="Conky Config">
-				<item label="Edit .conkyrc">
-					<action name="Execute">
-						<execute> gvim ~/.conkyrc </execute>
-					</action>
-				</item>
-				<item label="Restart Conky">
-					<action name="Execute">
-						<execute> conkywonky </execute>
-					</action>
-				</item>
-			</menu>
-			<item label="edit .vimrc">
+			<item label="Edit .rtorrent.rc">
 				<action name="Execute">
-					<execute>gvim ~/.vimrc</execute>
+					<execute> gvim ~/.rtorrent.rc </execute>
+				</action>
+			</item>
+			<item label="Edit .tmux.conf">
+				<action name="Execute">
+					<execute>gvim ~/.tmux.conf</execute>
+				</action>
+			</item>
+			<item label="Edit .conkyrc">
+				<action name="Execute">
+					<execute> gvim ~/.conkyrc </execute>
 				</action>
 			</item>
 			<item label="netcfg -r">
@@ -181,10 +200,53 @@
 				</action>
 			</item>
 		</menu>
-		<item label="Exit">
-			<action name="Execute">
-				<execute> oblogout </execute>
-			</action>
-		</item>
+		<menu id="root-menu-42239" label="Kill">
+			<item label="Kill ncmpcpp &amp; mpd">
+				<action name="Execute">
+					<execute>lxterminal -e ~/.ncmpcpp/stop.sh</execute>
+				</action>
+			</item>
+			<item label="Kill rtorrent">
+				<action name="Execute">
+					<execute>tmux kill-session -t rtorrent</execute>
+				</action>
+			</item>
+			<item label="Kill tmux">
+				<action name="Execute">
+					<execute>tmux kill-server</execute>
+				</action>
+			</item>
+			<item label="Restart Conky">
+				<action name="Execute">
+					<execute> conkywonky </execute>
+				</action>
+			</item>
+			<item label="Killall Chrome">
+				<action name="Execute">
+					<execute> killall chromium-browser </execute>
+				</action>
+			</item>
+			<item label="Drop Internet">
+				<action name="Execute">
+					<execute> sudo systemctl stop netcfg@home </execute>
+				</action>
+			</item>
+			<separator/>
+			<item label="Logout">
+				<action name="Execute">
+					<execute>openbox --exit</execute>
+				</action>
+			</item>
+			<item label="Reboot">
+				<action name="Execute">
+					<execute>sudo systemctl reboot</execute>
+				</action>
+			</item>
+			<item label="Shutdown">
+				<action name="Execute">
+					<execute>sudo systemctl poweroff</execute>
+				</action>
+			</item>
+		</menu>
 	</menu>
 </openbox_menu>
