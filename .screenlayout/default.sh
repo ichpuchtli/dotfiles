@@ -1,11 +1,7 @@
 #!/bin/sh
 
-xrandr --newmode "1280x1023"  109.00  1280 1368 1496 1712 1024 1027 1034 1063 -hsync +vsync
+xrandr --newmode "1280x1080" 115.00 1280 1368 1496 1712 1080 1083 1093 1120 -hsync +vsync
 
-xrandr --newmode "1280x1024"  109.00  1280 1368 1496 1712 1024 1027 1034 1063 -hsync +vsync
+xrandr --addmode DVI-I-1 1280x1080
 
-xrandr --addmode DVI-I-1 1280x1023
-
-xrandr --addmode VGA-1 1280x1024
-
-xrandr --output VGA-1 --mode 1280x1024 --pos 1280x0 --rotate normal --output TV-1 --off --output DVI-I-1 --mode 1280x1023 --pos 0x0 --rotate normal
+xrandr --output VGA-1 --mode 1920x1080 --pos 0x0 --rotate normal --output TV-1 --off --output DVI-I-1 --mode 1280x1080 --pos 1920x0 --rotate normal
