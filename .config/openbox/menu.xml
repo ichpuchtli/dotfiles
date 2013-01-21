@@ -46,61 +46,61 @@
 		</item>
 		<separator/>
 		<menu id="root-menu-692436" label="Volume">
-                        <item label="0%">
-                                <action name="Execute">
-                                        <execute>amixer set Master 0% </execute>
-                                </action>
-                        </item>
-                        <item label="10%">
-                                <action name="Execute">
-                                        <execute>amixer set Master 10% </execute>
-                                </action>
-                        </item>
-                        <item label="20%">
-                                <action name="Execute">
-                                        <execute>amixer set Master 20% </execute>
-                                </action>
-                        </item>
-                        <item label="30%">
-                                <action name="Execute">
-                                        <execute>amixer set Master 30% </execute>
-                                </action>
-                        </item>
-                        <item label="40%">
-                                <action name="Execute">
-                                        <execute>amixer set Master 40% </execute>
-                                </action>
-                        </item>
-                        <item label="50%">
-                                <action name="Execute">
-                                        <execute>amixer set Master 50% </execute>
-                                </action>
-                        </item>
-                        <item label="60%">
-                                <action name="Execute">
-                                        <execute>amixer set Master 60% </execute>
-                                </action>
-                        </item>
-                        <item label="70%">
-                                <action name="Execute">
-                                        <execute>amixer set Master 70% </execute>
-                                </action>
-                        </item>
-                        <item label="80%">
-                                <action name="Execute">
-                                        <execute>amixer set Master 80% </execute>
-                                </action>
-                        </item>
-                        <item label="90%">
-                                <action name="Execute">
-                                        <execute>amixer set Master 90% </execute>
-                                </action>
-                        </item>
-                        <item label="100%">
-                                <action name="Execute">
-                                        <execute>amixer set Master 100% </execute>
-                                </action>
-                        </item>
+			<item label="0%">
+				<action name="Execute">
+					<execute>amixer set Master 0% </execute>
+				</action>
+			</item>
+			<item label="10%">
+				<action name="Execute">
+					<execute>amixer set Master 10% </execute>
+				</action>
+			</item>
+			<item label="20%">
+				<action name="Execute">
+					<execute>amixer set Master 20% </execute>
+				</action>
+			</item>
+			<item label="30%">
+				<action name="Execute">
+					<execute>amixer set Master 30% </execute>
+				</action>
+			</item>
+			<item label="40%">
+				<action name="Execute">
+					<execute>amixer set Master 40% </execute>
+				</action>
+			</item>
+			<item label="50%">
+				<action name="Execute">
+					<execute>amixer set Master 50% </execute>
+				</action>
+			</item>
+			<item label="60%">
+				<action name="Execute">
+					<execute>amixer set Master 60% </execute>
+				</action>
+			</item>
+			<item label="70%">
+				<action name="Execute">
+					<execute>amixer set Master 70% </execute>
+				</action>
+			</item>
+			<item label="80%">
+				<action name="Execute">
+					<execute>amixer set Master 80% </execute>
+				</action>
+			</item>
+			<item label="90%">
+				<action name="Execute">
+					<execute>amixer set Master 90% </execute>
+				</action>
+			</item>
+			<item label="100%">
+				<action name="Execute">
+					<execute>amixer set Master 100% </execute>
+				</action>
+			</item>
 		</menu>
 		<menu id="36" label="Settings">
 			<menu id="37" label="OpenBox">
@@ -223,7 +223,7 @@
 			</item>
 			<item label="Killall Chrome">
 				<action name="Execute">
-					<execute> killall chromium-browser </execute>
+					<execute>killall chromium</execute>
 				</action>
 			</item>
 			<item label="Drop Internet">

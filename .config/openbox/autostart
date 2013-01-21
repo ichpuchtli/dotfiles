@@ -4,4 +4,4 @@ guake &
 xcompmgr &
 conky -q &
 nitrogen --restore &
-thunar --daemon
+thunar --daemon &
