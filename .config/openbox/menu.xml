@@ -9,11 +9,6 @@
 				<execute>lxterminal</execute>
 			</action>
 		</item>
-		<item label="LibreOffice Calc">
-			<action name="Execute">
-				<execute>localc</execute>
-			</action>
-		</item>
 		<item label="Chromium">
 			<action name="Execute">
 				<execute>chromium</execute>
@@ -29,11 +24,6 @@
 				<execute>virtualbox</execute>
 			</action>
 		</item>
-		<item label="FileZilla">
-			<action name="Execute">
-				<execute>filezilla</execute>
-			</action>
-		</item>
 		<item label="ncmpcpp">
 			<action name="Execute">
 				<execute>lxterminal --geometry=150x50 -e ~/.ncmpcpp/start.sh</execute>
@@ -45,63 +35,6 @@
 			</action>
 		</item>
 		<separator/>
-		<menu id="root-menu-692436" label="Volume">
-			<item label="0%">
-				<action name="Execute">
-					<execute>amixer set Master 0% </execute>
-				</action>
-			</item>
-			<item label="10%">
-				<action name="Execute">
-					<execute>amixer set Master 10% </execute>
-				</action>
-			</item>
-			<item label="20%">
-				<action name="Execute">
-					<execute>amixer set Master 20% </execute>
-				</action>
-			</item>
-			<item label="30%">
-				<action name="Execute">
-					<execute>amixer set Master 30% </execute>
-				</action>
-			</item>
-			<item label="40%">
-				<action name="Execute">
-					<execute>amixer set Master 40% </execute>
-				</action>
-			</item>
-			<item label="50%">
-				<action name="Execute">
-					<execute>amixer set Master 50% </execute>
-				</action>
-			</item>
-			<item label="60%">
-				<action name="Execute">
-					<execute>amixer set Master 60% </execute>
-				</action>
-			</item>
-			<item label="70%">
-				<action name="Execute">
-					<execute>amixer set Master 70% </execute>
-				</action>
-			</item>
-			<item label="80%">
-				<action name="Execute">
-					<execute>amixer set Master 80% </execute>
-				</action>
-			</item>
-			<item label="90%">
-				<action name="Execute">
-					<execute>amixer set Master 90% </execute>
-				</action>
-			</item>
-			<item label="100%">
-				<action name="Execute">
-					<execute>amixer set Master 100% </execute>
-				</action>
-			</item>
-		</menu>
 		<menu id="36" label="Settings">
 			<menu id="37" label="OpenBox">
 				<item label="Key Editor">
@@ -142,38 +75,6 @@
 					</action>
 				</item>
 			</menu>
-			<menu id="77" label="ncmpcpp Config">
-				<item label="Edit .ncmpcpp/keys">
-					<action name="Execute">
-						<execute> gvim ~/.ncmpcpp/keys </execute>
-					</action>
-				</item>
-				<item label="Edit .ncmpcpp/config">
-					<action name="Execute">
-						<execute> gvim ~/.ncmpcpp/config </execute>
-					</action>
-				</item>
-				<item label="Edit .mplayer">
-					<action name="Execute">
-						<execute> gvim ~/.mplayer</execute>
-					</action>
-				</item>
-			</menu>
-			<item label="Edit .rtorrent.rc">
-				<action name="Execute">
-					<execute> gvim ~/.rtorrent.rc </execute>
-				</action>
-			</item>
-			<item label="Edit .tmux.conf">
-				<action name="Execute">
-					<execute>gvim ~/.tmux.conf</execute>
-				</action>
-			</item>
-			<item label="Edit .conkyrc">
-				<action name="Execute">
-					<execute> gvim ~/.conkyrc </execute>
-				</action>
-			</item>
 			<item label="netcfg -r">
 				<action name="Execute">
 					<execute>lxterminal -e sudo netcfg -r home</execute>
@@ -216,19 +117,14 @@
 					<execute>tmux kill-server</execute>
 				</action>
 			</item>
-			<item label="Restart Conky">
-				<action name="Execute">
-					<execute> conkywonky </execute>
-				</action>
-			</item>
-			<item label="Killall Chrome">
+			<item label="killalll chromium">
 				<action name="Execute">
 					<execute>killall chromium</execute>
 				</action>
 			</item>
-			<item label="Drop Internet">
+			<item label="Restart Conky">
 				<action name="Execute">
-					<execute> sudo systemctl stop netcfg@home </execute>
+					<execute> conkywonky </execute>
 				</action>
 			</item>
 			<separator/>
