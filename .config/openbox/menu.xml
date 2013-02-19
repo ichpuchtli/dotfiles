@@ -16,7 +16,7 @@
 		</item>
 		<item label="Htop">
 			<action name="Execute">
-				<execute>lxterminal -e htop</execute>
+				<execute>lxterminal --geometry=150x50 -e htop</execute>
 			</action>
 		</item>
 		<item label="VirtualBox">
@@ -31,7 +31,7 @@
 		</item>
 		<item label="rtorrent">
 			<action name="Execute">
-				<execute>lxterminal --geometry=105x30 -e  ~/.rtorrent.sh</execute>
+				<execute>lxterminal --geometry=105x30 -e  rtorrent</execute>
 			</action>
 		</item>
 		<separator/>
@@ -75,11 +75,6 @@
 					</action>
 				</item>
 			</menu>
-			<item label="netcfg -r">
-				<action name="Execute">
-					<execute>lxterminal -e sudo netcfg -r home</execute>
-				</action>
-			</item>
 			<item label="Customize Look and Feel">
 				<action name="Execute">
 					<execute>lxappearance</execute>
@@ -102,14 +97,19 @@
 			</item>
 		</menu>
 		<menu id="root-menu-42239" label="Kill">
+			<item label="netcfg -r">
+				<action name="Execute">
+					<execute>lxterminal -e sudo netcfg -r home</execute>
+				</action>
+			</item>
 			<item label="Kill ncmpcpp &amp; mpd">
 				<action name="Execute">
 					<execute>lxterminal -e ~/.ncmpcpp/stop.sh</execute>
 				</action>
 			</item>
-			<item label="Kill rtorrent">
+			<item label="Killall rtorrent">
 				<action name="Execute">
-					<execute>tmux kill-session -t rtorrent</execute>
+					<execute>killall rtorrent</execute>
 				</action>
 			</item>
 			<item label="Kill tmux">
@@ -117,7 +117,7 @@
 					<execute>tmux kill-server</execute>
 				</action>
 			</item>
-			<item label="killalll chromium">
+			<item label="killall chromium">
 				<action name="Execute">
 					<execute>killall chromium</execute>
 				</action>
