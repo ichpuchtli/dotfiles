@@ -2,7 +2,7 @@
 <openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
 	<menu id="root-menu" label="OpenBox 3">
 		<menu execute="~/.config/openbox/pipemenus/obpipemenu-places ~/" id="places" label="Places"/>
-		<!--		<menu execute="cat ~/.cache/applications.xml" id="desktop-menu" label="Apps"/> -->
+		<menu execute="cat ~/.cache/abapps.xml" id="desktop-menu" label="Apps"/>
 		<separator/>
 		<item label="Terminal">
 			<action name="Execute">
@@ -150,6 +150,28 @@
 					</action>
 				</item>
 			</menu>
+			<menu id="36-963123" label="Wallpaper">
+				<item label="Nitrogen">
+					<action name="Execute">
+						<execute>nitrogen</execute>
+					</action>
+				</item>
+				<item label="wallsetswap --prev">
+					<action name="Execute">
+						<execute>~/.config/nitrogen/wallsetswap.sh --prev</execute>
+					</action>
+				</item>
+				<item label="wallswap">
+					<action name="Execute">
+						<execute>~/.config/nitrogen/wallswap.sh</execute>
+					</action>
+				</item>
+				<item label="wallsetswap --next">
+					<action name="Execute">
+						<execute>~/.config/nitrogen/wallsetswap.sh --next</execute>
+					</action>
+				</item>
+			</menu>
 			<item label="edit .vimrc">
 				<action name="Execute">
 					<execute>gvim ~/.vimrc</execute>
@@ -175,28 +197,6 @@
 					<execute>arandr</execute>
 				</action>
 			</item>
-			<menu id="36-963123" label="Wallpaper">
-				<item label="Nitrogen">
-					<action name="Execute">
-						<execute>nitrogen</execute>
-					</action>
-				</item>
-				<item label="wallsetswap --prev">
-					<action name="Execute">
-						<execute>~/.config/nitrogen/wallsetswap.sh --prev</execute>
-					</action>
-				</item>
-				<item label="wallswap">
-					<action name="Execute">
-						<execute>~/.config/nitrogen/wallswap.sh</execute>
-					</action>
-				</item>
-				<item label="wallsetswap --next">
-					<action name="Execute">
-						<execute>~/.config/nitrogen/wallsetswap.sh --next</execute>
-					</action>
-				</item>
-			</menu>
 		</menu>
 		<item label="Exit">
 			<action name="Execute">
