@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc">
   <resistance>
     <strength>10</strength>
@@ -166,23 +165,23 @@
   </dock>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
-    <keybind key="W-1">
+    <keybind key="F1">
       <action name="DesktopLeft"/>
     </keybind>
-    <keybind key="W-2">
+    <keybind key="F2">
       <action name="DesktopRight"/>
     </keybind>
-    <keybind key="W-4">
+    <keybind key="F4">
       <action name="Execute">
         <command>~/.config/nitrogen/wallsetswap.sh --next</command>
       </action>
     </keybind>
-    <keybind key="W-3">
+    <keybind key="F5">
       <action name="Execute">
         <command>~/.config/nitrogen/wallsetswap.sh --prev</command>
       </action>
     </keybind>
-    <keybind key="F2">
+    <keybind key="F3">
       <action name="Execute">
         <command>~/.config/nitrogen/wallswap.sh</command>
       </action>
@@ -348,12 +347,12 @@
     </keybind>
     <keybind key="F9">
       <action name="Execute">
-        <command>amixer set Master 5%+ unmute</command>
+        <command>amixer set Master 2%- unmute</command>
       </action>
     </keybind>
     <keybind key="F10">
       <action name="Execute">
-        <command>amixer set Master 5%- unmute</command>
+        <command>amixer set Master 2%+ unmute</command>
       </action>
     </keybind>
     <keybind key="F11">

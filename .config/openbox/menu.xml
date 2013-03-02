@@ -2,7 +2,7 @@
 <openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
 	<menu id="root-menu" label="OpenBox 3">
 		<menu execute="~/.config/openbox/pipemenus/obpipemenu-places ~/" id="places" label="Places"/>
-		<menu execute="cat ~/.cache/abapps.xml" id="desktop-menu" label="Apps"/>
+		<!-- <menu execute="cat ~/.cache/applications.xml" id="desktop-menu" label="Apps"/> -->
 		<separator/>
 		<item label="Terminal">
 			<action name="Execute">
@@ -16,54 +16,22 @@
 		</item>
 		<item label="Htop">
 			<action name="Execute">
-				<execute>lxterminal -e htop</execute>
-			</action>
-		</item>
-		<item label="FileZilla">
-			<action name="Execute">
-				<execute>filezilla</execute>
+				<execute>lxterminal --geometry=150x50 -e htop</execute>
 			</action>
 		</item>
 		<item label="ncmpcpp">
 			<action name="Execute">
-				<execute>lxterminal -e ~/.ncmpcpp/start.sh</execute>
+				<execute>lxterminal --geometry=150x50 -e ~/.ncmpcpp/start.sh</execute>
 			</action>
 		</item>
 		<item label="rtorrent">
 			<action name="Execute">
-				<execute>lxterminal -e  ~/.rtorrent.sh</execute>
+				<execute>lxterminal --geometry=105x30 -e  rtorrent</execute>
 			</action>
 		</item>
 		<separator/>
 		<menu id="36" label="Settings">
 			<menu id="37" label="OpenBox">
-				<menu id="root-menu-891528" label="Eye Candy">
-					<item label="No effects">
-						<action name="Execute">
-							<execute> ~/.config/openbox/scripts/xcompmgr.sh unset </execute>
-						</action>
-					</item>
-					<item label="Transparency">
-						<action name="Execute">
-							<execute> ~/.config/openbox/scripts/xcompmgr.sh set </execute>
-						</action>
-					</item>
-					<item label="Transparency, fading">
-						<action name="Execute">
-							<execute> ~/.config/openbox/scripts/xcompmgr.sh setshaded </execute>
-						</action>
-					</item>
-					<item label="Transparency, fading shadows">
-						<action name="Execute">
-							<execute> ~/.config/openbox/scripts/xcompmgr.sh setshadowshade </execute>
-						</action>
-					</item>
-				</menu>
-				<item label="Edit autostart">
-					<action name="Execute">
-						<execute>gvim ~/.config/openbox/autostart</execute>
-					</action>
-				</item>
 				<item label="Key Editor">
 					<action name="Execute">
 						<execute> obkey </execute>
@@ -79,109 +47,46 @@
 						<execute> obmenu </execute>
 					</action>
 				</item>
-				<separator/>
-				<item label="Reconfigure">
-					<action name="Reconfigure"/>
-				</item>
-				<item label="Restart">
-					<action name="Restart"/>
-				</item>
 			</menu>
-			<menu id="77" label="ncmpcpp Config">
-				<item label="Edit .ncmpcpp/keys">
+			<menu id="36-46839" label="Internet">
+				<item label="eduroam">
 					<action name="Execute">
-						<execute> gvim ~/.ncmpcpp/keys </execute>
+						<execute>lxterminal -e sudo netcfg -r eduroam</execute>
 					</action>
 				</item>
-				<item label="Edit .ncmpcpp/config">
+				<item label="Nokia_N9">
 					<action name="Execute">
-						<execute> gvim ~/.ncmpcpp/config </execute>
+						<execute>lxterminal -e sudo netcfg -r nokia</execute>
 					</action>
 				</item>
-				<item label="Edit .mplayer">
+				<item label="MacNetwork24GHz">
 					<action name="Execute">
-						<execute> gvim ~/.mplayer</execute>
-					</action>
-				</item>
-				<item label="Kill ncmpcpp &amp; mpd">
-					<action name="Execute">
-						<execute>lxterminal -e ~/.ncmpcpp/stop.sh</execute>
+						<execute>lxterminal -e sudo netcfg -r home</execute>
 					</action>
 				</item>
 			</menu>
-			<menu id="66" label="rtorrent Config">
-				<item label="Edit .rtorrent.rc">
+			<menu id="root-menu-891528" label="Eye Candy">
+				<item label="No effects">
 					<action name="Execute">
-						<execute> gvim ~/.rtorrent.rc </execute>
+						<execute> ~/.config/openbox/scripts/xcompmgr.sh unset </execute>
 					</action>
 				</item>
-				<item label="rm .rtorrent/*">
+				<item label="Transparency">
 					<action name="Execute">
-						<execute>rm .rtorrent/*</execute>
+						<execute> ~/.config/openbox/scripts/xcompmgr.sh set </execute>
 					</action>
 				</item>
-				<item label="Kill rtorrent">
+				<item label="Transparency, fading">
 					<action name="Execute">
-						<execute>tmux kill-session -t rtorrent</execute>
+						<execute> ~/.config/openbox/scripts/xcompmgr.sh setshaded </execute>
 					</action>
 				</item>
-			</menu>
-			<menu id="36-993443" label="Tmux">
-				<item label="Edit .tmux.conf">
+				<item label="Transparency, fading shadows">
 					<action name="Execute">
-						<execute>gvim ~/.tmux.conf</execute>
-					</action>
-				</item>
-				<item label="Kill tmux">
-					<action name="Execute">
-						<execute>tmux kill-server</execute>
+						<execute> ~/.config/openbox/scripts/xcompmgr.sh setshadowshade </execute>
 					</action>
 				</item>
 			</menu>
-			<menu id="38" label="Conky Config">
-				<item label="Edit .conkyrc">
-					<action name="Execute">
-						<execute> gvim ~/.conkyrc </execute>
-					</action>
-				</item>
-				<item label="Restart Conky">
-					<action name="Execute">
-						<execute> conkywonky </execute>
-					</action>
-				</item>
-			</menu>
-			<menu id="36-963123" label="Wallpaper">
-				<item label="Nitrogen">
-					<action name="Execute">
-						<execute>nitrogen</execute>
-					</action>
-				</item>
-				<item label="wallsetswap --prev">
-					<action name="Execute">
-						<execute>~/.config/nitrogen/wallsetswap.sh --prev</execute>
-					</action>
-				</item>
-				<item label="wallswap">
-					<action name="Execute">
-						<execute>~/.config/nitrogen/wallswap.sh</execute>
-					</action>
-				</item>
-				<item label="wallsetswap --next">
-					<action name="Execute">
-						<execute>~/.config/nitrogen/wallsetswap.sh --next</execute>
-					</action>
-				</item>
-			</menu>
-			<item label="edit .vimrc">
-				<action name="Execute">
-					<execute>gvim ~/.vimrc</execute>
-				</action>
-			</item>
-			<item label="netcfg -r">
-				<action name="Execute">
-					<execute>lxterminal -e sudo netcfg -r home</execute>
-				</action>
-			</item>
 			<item label="Customize Look and Feel">
 				<action name="Execute">
 					<execute>lxappearance</execute>
@@ -197,11 +102,54 @@
 					<execute>arandr</execute>
 				</action>
 			</item>
+			<item label="Wallpaper">
+				<action name="Execute">
+					<execute> nitrogen </execute>
+				</action>
+			</item>
 		</menu>
-		<item label="Exit">
-			<action name="Execute">
-				<execute> oblogout </execute>
-			</action>
-		</item>
+		<menu id="root-menu-42239" label="Kill">
+			<item label="Kill ncmpcpp &amp; mpd">
+				<action name="Execute">
+					<execute>lxterminal -e ~/.ncmpcpp/stop.sh</execute>
+				</action>
+			</item>
+			<item label="Killall rtorrent">
+				<action name="Execute">
+					<execute>killall rtorrent</execute>
+				</action>
+			</item>
+			<item label="Kill tmux">
+				<action name="Execute">
+					<execute>tmux kill-server</execute>
+				</action>
+			</item>
+			<item label="killall chromium">
+				<action name="Execute">
+					<execute>killall chromium</execute>
+				</action>
+			</item>
+			<item label="Restart Conky">
+				<action name="Execute">
+					<execute> conkywonky </execute>
+				</action>
+			</item>
+			<separator/>
+			<item label="Logout">
+				<action name="Execute">
+					<execute>openbox --exit</execute>
+				</action>
+			</item>
+			<item label="Reboot">
+				<action name="Execute">
+					<execute>sudo systemctl reboot</execute>
+				</action>
+			</item>
+			<item label="Shutdown">
+				<action name="Execute">
+					<execute>sudo systemctl poweroff</execute>
+				</action>
+			</item>
+		</menu>
 	</menu>
 </openbox_menu>

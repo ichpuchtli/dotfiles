@@ -6,10 +6,6 @@ autoload -Uz promptinit
 promptinit
 prompt walters
 
-# Use modern completion system
-autoload -Uz compinit
-compinit
-
 # Use vi keybindings 
 bindkey -v
 
@@ -19,8 +15,42 @@ HISTFILE=~/.zsh_history
 
 export EDITOR=vim
 
+[ ! "$UID" = "0" ] && archbey -c white
+[  "$UID" = "0" ] && archbey -c green
+
+# Use modern completion system
+autoload -Uz compinit
+compinit
+
+zstyle ':completion:*' auto-description 'specify: %d'
+zstyle ':completion:*' completer _expand _complete _correct _approximate
+zstyle ':completion:*' format 'Completing %d'
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*' menu select=2
+eval "$(dircolors -b)"
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*' list-colors ''
+zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
+zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=* l:|=*'
+zstyle ':completion:*' menu select=long
+zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
+zstyle ':completion:*' use-compctl false
+zstyle ':completion:*' verbose true
+
 if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
 
 source /usr/share/doc/pkgfile/command-not-found.zsh
+
+man() {
+        env \
+                LESS_TERMCAP_mb=$(printf "\e[1;31m") \
+                LESS_TERMCAP_md=$(printf "\e[1;31m") \
+                LESS_TERMCAP_me=$(printf "\e[0m") \
+                LESS_TERMCAP_se=$(printf "\e[0m") \
+                LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
+                LESS_TERMCAP_ue=$(printf "\e[0m") \
+                LESS_TERMCAP_us=$(printf "\e[1;32m") \
+                        man "$@"
+}

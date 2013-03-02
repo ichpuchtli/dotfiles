@@ -1,7 +1,7 @@
 #!/bin/bash
 
-currwall=`cat ~/.config/nitrogen/currwall`
-wallcount=`ls ~/.config/nitrogen/walls | wc -w`
+currwall=`cat /home/sam/.config/nitrogen/currwall`
+wallcount=`ls /home/sam/.config/nitrogen/walls | wc -w`
 filecount=0
 
 if [ $1 = "--next" ]; then
@@ -22,15 +22,15 @@ if [ $nextwall -gt $wallcount ] || [ $nextwall -lt 0 ]; then
     nextwall=0
 fi
 
-for file in ~/.config/nitrogen/walls/* 
+for file in /home/sam/.config/nitrogen/walls/* 
 do
     if [ "$filecount" -eq "$nextwall" ]; then
         
         img1=`head -1 $file`
         img2=`tail -1 $file`
 
-        sed -i 's|^file.*$|file='$img1'|g' ~/.config/nitrogen/bg-saved.cfg
-        sed -i 's|^file.*$|file='$img2'|g' ~/.config/nitrogen/bg-saved.cfg.night
+        sed -i 's|^file.*$|file='$img1'|g' /home/sam/.config/nitrogen/bg-saved.cfg
+        sed -i 's|^file.*$|file='$img2'|g' /home/sam/.config/nitrogen/bg-saved.cfg.night
 
         break
 
@@ -42,4 +42,4 @@ done
 
 nitrogen --restore
 
-echo $nextwall > ~/.config/nitrogen/currwall 
+echo $nextwall > /home/sam/.config/nitrogen/currwall 
