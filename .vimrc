@@ -205,4 +205,6 @@ set wildmode=list:longest
 "Start scrolling when we're 8 lines away from margins
 set scrolloff=8
 
-
+augroup filetypedetect
+    au! BufRead,BufNewFile *nc setfiletype nc
+augroup END

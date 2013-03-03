@@ -13,7 +13,6 @@ HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.zsh_history
 
-export EDITOR=vim
 
 [ ! "$UID" = "0" ] && archbey -c white
 [  "$UID" = "0" ] && archbey -c green
@@ -54,3 +53,16 @@ man() {
                 LESS_TERMCAP_us=$(printf "\e[1;32m") \
                         man "$@"
 }
+
+export EDITOR=vim
+
+export C_INCLUDE_PATH=/usr/include/i386-linux-gnu
+export CPLUST_INCLUDE_PATH=$C_INCLUDE_PATH
+export LIBRARY_PATH=/usr/lib/i386-linux-gnu
+
+export TOSROOT=/home/sam/src/tinyos-main-wsn-course
+export TOSDIR=$TOSROOT/tos
+export MAKERULES=$TOSROOT/support/make/Makerules
+export CLASSPATH=$TOSROOT/support/sdk/java/tinyos.jar
+export PYTHONPATH=$TOSROOT/support/sdk/python:$PYTHONPATH
+
