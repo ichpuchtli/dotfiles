@@ -16,12 +16,12 @@
 		</item>
 		<item label="Htop">
 			<action name="Execute">
-				<execute>lxterminal --geometry=150x50 -e htop</execute>
+				<execute>lxterminal --geometry=120x35 -e htop</execute>
 			</action>
 		</item>
 		<item label="ncmpcpp">
 			<action name="Execute">
-				<execute>lxterminal --geometry=150x50 -e ~/.ncmpcpp/start.sh</execute>
+				<execute>lxterminal --geometry=120x35 -e ~/.ncmpcpp/start.sh</execute>
 			</action>
 		</item>
 		<item label="rtorrent">
@@ -45,23 +45,6 @@
 				<item label="Menu Editor">
 					<action name="Execute">
 						<execute> obmenu </execute>
-					</action>
-				</item>
-			</menu>
-			<menu id="36-46839" label="Internet">
-				<item label="eduroam">
-					<action name="Execute">
-						<execute>lxterminal -e sudo netcfg -r eduroam</execute>
-					</action>
-				</item>
-				<item label="Nokia_N9">
-					<action name="Execute">
-						<execute>lxterminal -e sudo netcfg -r nokia</execute>
-					</action>
-				</item>
-				<item label="MacNetwork24GHz">
-					<action name="Execute">
-						<execute>lxterminal -e sudo netcfg -r home</execute>
 					</action>
 				</item>
 			</menu>

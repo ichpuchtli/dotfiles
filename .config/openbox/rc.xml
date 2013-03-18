@@ -178,12 +178,27 @@
     </keybind>
     <keybind key="F5">
       <action name="Execute">
-        <command>~/.config/nitrogen/wallsetswap.sh --prev</command>
+        <command>sudo xdg-screensaver activate</command>
       </action>
     </keybind>
     <keybind key="F3">
       <action name="Execute">
         <command>~/.config/nitrogen/wallswap.sh</command>
+      </action>
+    </keybind>
+    <keybind key="F6">
+      <action name="Execute">
+        <command>xbacklight -20 -time 20 -steps 5</command>
+      </action>
+    </keybind>
+    <keybind key="F7">
+      <action name="Execute">
+        <command>xbacklight +20 -time 5</command>
+      </action>
+    </keybind>
+    <keybind key="F9">
+      <action name="Execute">
+        <command>~/src/scripts/toggle_touch.sh</command>
       </action>
     </keybind>
     <keybind key="W-d">
@@ -345,12 +360,12 @@
     <keybind key="W-c">
       <action name="MoveToCenter"/>
     </keybind>
-    <keybind key="F9">
+    <keybind key="Print">
       <action name="Execute">
         <command>amixer set Master 2%- unmute</command>
       </action>
     </keybind>
-    <keybind key="F10">
+    <keybind key="Home">
       <action name="Execute">
         <command>amixer set Master 2%+ unmute</command>
       </action>

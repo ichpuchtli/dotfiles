@@ -62,7 +62,11 @@ export LIBRARY_PATH=/usr/lib/i386-linux-gnu
 
 export TOSROOT=/home/sam/src/tinyos-main-wsn-course
 export TOSDIR=$TOSROOT/tos
-export MAKERULES=$TOSROOT/support/make/Makerules
+export PATH=$PATH:$TOSROOT/support/sdk/c/sf
 export CLASSPATH=$TOSROOT/support/sdk/java/tinyos.jar
-export PYTHONPATH=$TOSROOT/support/sdk/python:$PYTHONPATH
+export PYTHONPATH=$PYTHONPATH:$TOSROOT/support/sdk/python
+export MAKERULES=$TOSROOT/support/make/Makerules
+
+
+export PATH=$PATH:$HOME/src/gcc-arm-none-eabi/bin
 

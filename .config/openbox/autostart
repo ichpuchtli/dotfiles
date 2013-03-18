@@ -1,6 +1,5 @@
 guake &
 conky -q &
-xcompmgr &
 nitrogen --restore &
+xcompmgr &
 thunar --daemon &
-#/usr/bin/synclient TouchpadOff=1 &
