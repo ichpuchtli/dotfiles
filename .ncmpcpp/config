@@ -104,7 +104,7 @@ song_columns_list_format = "(30)[cyan]{t} (30)[white]{a} (30)[cyan]{b} (5)[white
 #
 ##### various settings #####
 #
-playlist_display_mode = "columns"
+playlist_display_mode = "classic"
 #
 browser_display_mode = "columns"
 #
@@ -135,6 +135,15 @@ header_visibility = "yes"
 statusbar_visibility = "yes"
 #
 fancy_scrolling = "yes"
+
+lines_scrolled = 3
+
+mouse_list_scroll_whole_page = "no"
+
+user_interface = "alternative"
+
+enable_window_title = "yes"
+
 #
 follow_now_playing_lyrics = "yes"
 #

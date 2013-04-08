@@ -1,0 +1,73 @@
+START END DIFF PWD CMD
+07/04/13-23:17:55 07/04/13-23:17:57 2 /home/sam/src/scripts vim bak
+07/04/13-23:18:10 07/04/13-23:18:11 1 /home/sam/src/scripts vim bak
+07/04/13-23:18:39 07/04/13-23:18:40 1 /home/sam/src/scripts vim
+07/04/13-23:18:47 07/04/13-23:18:51 4 /home/sam/src/scripts vim proglog.sh
+08/04/13-00:50:31 08/04/13-00:50:47 16 /home/sam/src/scripts vim rmem rmem.sh
+08/04/13-00:51:35 08/04/13-00:52:31 56 /home/sam/src/scripts vim cpm3u.sh
+08/04/13-01:02:17 08/04/13-01:02:35 18 /home/sam/.mpd/playlists vim cpm3u.sh
+08/04/13-01:04:47 08/04/13-01:05:07 20 /home/sam/.mpd/playlists vim cpm3u.sh
+08/04/13-01:09:09 08/04/13-01:09:15 6 /home/sam/.mpd/playlists vim cpm3u.sh
+08/04/13-01:09:24 08/04/13-01:09:49 25 /home/sam/.mpd/playlists vim cpm3u.sh
+08/04/13-01:11:16 08/04/13-01:12:01 45 /home/sam/.mpd/playlists vim cpm3u.sh
+08/04/13-01:17:19 08/04/13-01:17:25 6 /home/sam/.mpd/playlists vim cpm3u.sh
+08/04/13-12:35:54 08/04/13-12:38:14 140 /home/sam vim .zshrc
+08/04/13-12:40:24 08/04/13-12:41:20 56 /home/sam vim .zshrc
+08/04/13-12:41:47 08/04/13-12:42:03 16 /home/sam vim src/zsh-git-prompt/zshrc.sh
+08/04/13-12:45:10 08/04/13-12:45:23 13 /home/sam vim .zshrc
+08/04/13-12:45:31 08/04/13-12:45:44 13 /home/sam vim .zshrc
+08/04/13-12:46:27 08/04/13-12:47:06 39 /home/sam vim .zshrc
+08/04/13-12:47:13 08/04/13-12:47:25 12 /home/sam vim .zshrc
+08/04/13-12:48:27 08/04/13-12:56:22 475 /home/sam vim .zshrc
+08/04/13-12:56:37 08/04/13-13:10:54 857 /home/sam vim .zshrc
+08/04/13-13:13:05 08/04/13-13:13:12 7 /home/sam/src/simulide_ext/include/simavr vim Makefile
+08/04/13-13:13:26 08/04/13-13:14:13 47 /home/sam/src/simulide_ext/include/simavr vim cores
+08/04/13-13:50:00 08/04/13-13:50:05 5 /home/sam/src/simulide_ext/include/simavr vim cores/sim_core_declare.h
+08/04/13-13:50:16 08/04/13-13:51:08 52 /home/sam/src/simulide_ext/include/simavr vim sim_core_config.h sim_core_decl.h
+08/04/13-14:24:16 08/04/13-14:24:17 1 /home/sam/src/simulide_ext vim
+08/04/13-13:14:23 08/04/13-14:24:53 4230 /home/sam/src/simulide_ext/include/simavr/cores vim sim_mega128.c
+08/04/13-14:37:23 08/04/13-14:37:26 3 /home/sam/src/simulide_ext/src vim utils.h
+08/04/13-14:37:44 08/04/13-14:37:50 6 /home/sam/src/simulide_ext/src vim simulator/elements/processors/avrprocessor.cpp
+08/04/13-14:39:16 08/04/13-14:45:26 370 /home/sam/src/simulide_ext/SimulIDE/data/avr vim atmega64.package
+08/04/13-15:58:16 08/04/13-15:59:51 95 /home/sam/src/simulide_ext/src/gui/circuitwidget/components/mcu vim avrcomponentpin.cpp
+08/04/13-16:00:10 08/04/13-16:01:07 57 /home/sam/src/simulide_ext/src/gui/circuitwidget/components/mcu vim avrboard.cpp avrcomponent.cpp
+08/04/13-16:01:30 08/04/13-16:01:43 13 /home/sam/src/simulide_ext/src/gui/circuitwidget/components vim ../component.cpp
+08/04/13-16:02:12 08/04/13-16:03:01 49 /home/sam/src/simulide_ext/src/gui/circuitwidget/components vim ../package.cpp
+08/04/13-16:03:08 08/04/13-16:04:08 60 /home/sam/src/simulide_ext/src/gui/circuitwidget vim pin.cpp
+08/04/13-16:04:10 08/04/13-16:04:21 11 /home/sam/src/simulide_ext/src/gui/circuitwidget vim pin.h
+08/04/13-16:04:32 08/04/13-16:04:33 1 /home/sam/src/simulide_ext/src/gui/circuitwidget vim package.h
+08/04/13-16:04:43 08/04/13-16:04:52 9 /home/sam/src/simulide_ext/src/gui/circuitwidget vim connector.cpp
+08/04/13-16:06:46 08/04/13-16:06:58 12 /home/sam/src/simulide_ext/src vim gui/componentselector.cpp
+08/04/13-16:07:08 08/04/13-16:08:19 71 /home/sam/src/simulide_ext/src vim gui/circuitwidget/subcircuit.cpp
+08/04/13-16:09:00 08/04/13-16:10:52 112 /home/sam/src/simulide_ext/src vim gui/circuitwidget/components/mcu/mcucomponent.cpp
+08/04/13-16:10:56 08/04/13-16:11:36 40 /home/sam/src/simulide_ext/src vim gui/circuitwidget/components/mcu/mcucomponentpin.cpp
+08/04/13-16:14:38 08/04/13-16:15:13 35 /home/sam/src/simulide_ext/src/gui/circuitwidget vim package.cpp
+08/04/13-16:15:15 08/04/13-16:15:17 2 /home/sam/src/simulide_ext/src/gui/circuitwidget vim package.h
+08/04/13-16:15:25 08/04/13-16:15:51 26 /home/sam/src/simulide_ext/src/gui/circuitwidget vim circuit.cpp
+08/04/13-16:16:29 08/04/13-16:17:48 79 /home/sam/src/simulide_ext/src vim gui/circuitwidget/components/mcu/avrcomponentpin.cpp
+08/04/13-16:17:50 08/04/13-16:18:10 20 /home/sam/src/simulide_ext/src vim gui/circuitwidget/components/mcu/avrcomponentpin.h
+08/04/13-16:18:14 08/04/13-16:18:16 2 /home/sam/src/simulide_ext/src vim gui/circuitwidget/components/mcu/avrcomponent.h
+08/04/13-16:18:18 08/04/13-16:21:43 205 /home/sam/src/simulide_ext/src vim gui/circuitwidget/components/mcu/avrcomponent.cpp
+08/04/13-16:22:19 08/04/13-16:22:47 28 /home/sam/src/simulide_ext/SimulIDE/data vim avrs.xml
+08/04/13-16:22:50 08/04/13-16:22:52 2 /home/sam/src/simulide_ext/SimulIDE/data vim subcircuits.xml
+08/04/13-16:23:10 08/04/13-16:26:37 207 /home/sam/src/simulide_ext/SimulIDE/data vim arduino/arduino_uno.package arduino/arduino_uno.subcircuit
+08/04/13-16:38:27 08/04/13-16:38:42 15 /home/sam/src/simulide_ext vim Makefile
+08/04/13-16:49:26 08/04/13-16:49:37 11 /home/sam/src/motorctl vim main.c
+08/04/13-16:49:40 08/04/13-16:50:07 27 /home/sam/src/motorctl vim Makefile
+08/04/13-16:52:12 08/04/13-16:52:17 5 /home/sam/src/motorctl vim Makefile
+08/04/13-16:57:35 08/04/13-16:57:36 1 /home/sam/src vim game.
+08/04/13-16:57:39 08/04/13-16:58:39 60 /home/sam/src vim game.c joystick.c led_display.c led_pmod.c project.c score.c scrolling_char_display.c seven_seg.c sound.c timer2.c
+08/04/13-17:36:16 08/04/13-17:36:37 21 /home/sam vim .TIMELOG
+08/04/13-17:34:49 08/04/13-17:46:51 722 /home/sam vim .zshrc
+08/04/13-19:22:44 08/04/13-19:23:06 22 /home/sam/src/simulide_ext vim Makefile
+08/04/13-19:35:23 08/04/13-19:35:24 1 /home/sam/src/simulide_ext vim Makefile
+08/04/13-19:36:50 08/04/13-19:36:55 5 /home/sam/src/simulide_ext/SimulIDE/examples/atmega64_test vim Makefile
+08/04/13-19:36:59 08/04/13-19:37:13 14 /home/sam/src/simulide_ext/SimulIDE/examples/atmega64_test vim Makefile
+08/04/13-19:37:20 08/04/13-19:42:36 316 /home/sam/src/simulide_ext/SimulIDE/examples/atmega64_test vim main.c
+08/04/13-19:42:49 08/04/13-19:43:20 31 /home/sam/src/simulide_ext/SimulIDE/examples/atmega64_test vim Makefile
+08/04/13-19:52:54 08/04/13-19:54:38 104 /home/sam/src/simulide_ext/SimulIDE/examples/atmega64_test vim main.c
+08/04/13-20:12:57 08/04/13-20:12:59 2 /home/sam/src/simulide_ext/SimulIDE/examples/atmega64_test vim Makefile
+08/04/13-20:27:20 08/04/13-20:27:24 4 /home/sam/src/simavr/simavr vim Makefile
+08/04/13-20:27:27 08/04/13-20:27:29 2 /home/sam/src/simavr/simavr vim ../Makefile
+08/04/13-20:13:01 08/04/13-20:32:30 1169 /home/sam/src/simulide_ext/SimulIDE/examples/atmega64_test vim main.c
+08/04/13-20:27:36 08/04/13-20:32:57 321 /home/sam/src/simavr/simavr vim ../Makefile.common

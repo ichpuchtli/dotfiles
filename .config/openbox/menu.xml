@@ -6,7 +6,7 @@
 		<separator/>
 		<item label="Terminal">
 			<action name="Execute">
-				<execute>lxterminal</execute>
+				<execute>xfce4-terminal</execute>
 			</action>
 		</item>
 		<item label="Chromium">
@@ -26,12 +26,17 @@
 		</item>
 		<item label="ncmpcpp">
 			<action name="Execute">
-				<execute>lxterminal --geometry=150x50 -e ~/.ncmpcpp/start.sh</execute>
+				<execute>xfce4-terminal --geometry=50x55 --command ~/.ncmpcpp/start.sh</execute>
+			</action>
+		</item>
+		<item label="Steam">
+			<action name="Execute">
+				<execute>steam</execute>
 			</action>
 		</item>
 		<item label="rtorrent">
 			<action name="Execute">
-				<execute>lxterminal --geometry=105x30 -e  rtorrent</execute>
+				<execute>xfce4-terminal --geometry=105x30 --command rtorrent</execute>
 			</action>
 		</item>
 		<separator/>
@@ -50,6 +55,18 @@
 				<item label="Menu Editor">
 					<action name="Execute">
 						<execute> obmenu </execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="36-911632" label="Network">
+				<item label="Nokia_N9">
+					<action name="Execute">
+						<execute>lxterminal -e sudo netcfg -r nokia</execute>
+					</action>
+				</item>
+				<item label="MacNetwork24GHz">
+					<action name="Execute">
+						<execute>lxterminal -e sudo netcfg -r home</execute>
 					</action>
 				</item>
 			</menu>
@@ -97,17 +114,12 @@
 			</item>
 		</menu>
 		<menu id="root-menu-42239" label="Kill">
-			<item label="netcfg -r">
-				<action name="Execute">
-					<execute>lxterminal -e sudo netcfg -r home</execute>
-				</action>
-			</item>
 			<item label="Kill ncmpcpp &amp; mpd">
 				<action name="Execute">
 					<execute>lxterminal -e ~/.ncmpcpp/stop.sh</execute>
 				</action>
 			</item>
-			<item label="Killall rtorrent">
+			<item label="Kill rtorrent">
 				<action name="Execute">
 					<execute>killall rtorrent</execute>
 				</action>
@@ -117,7 +129,7 @@
 					<execute>tmux kill-server</execute>
 				</action>
 			</item>
-			<item label="killall chromium">
+			<item label="Kill chromium">
 				<action name="Execute">
 					<execute>killall chromium</execute>
 				</action>
@@ -128,11 +140,6 @@
 				</action>
 			</item>
 			<separator/>
-			<item label="Logout">
-				<action name="Execute">
-					<execute>openbox --exit</execute>
-				</action>
-			</item>
 			<item label="Reboot">
 				<action name="Execute">
 					<execute>sudo systemctl reboot</execute>

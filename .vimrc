@@ -1,10 +1,6 @@
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.  set nocompatible
 
-" This line should not be removed as it ensures that various options are
-" properly set to work with the Vim-related packages available in Debian.
-runtime! debian.vim
-
 " =============== Pathogen Initialization ===============
 " This loads all the plugins in ~/.vim/bundle
 " Use tpope's pathogen plugin to manage all other plugins
@@ -47,12 +43,22 @@ nnoremap <silent> <Leader>b :bp<CR>
 " Delete Buffer
 nnoremap <silent> <Leader>x :bd<CR>
 
+" Run make
+nnoremap <silent> <Leader>m :make<CR>
+
+" Run make reload
+nnoremap <silent> <Leader>r :make reload<CR>
+
+" Run make clean
+nnoremap <silent> <Leader>c :make clean<CR>
+
 " Toggle paste mode
 nmap <silent> <Leader>p :set invpaste<CR>:set paste?<CR>
 
 " cd to the directory containing the file in the buffer
 nmap <silent> <Leader>cd :lcs %:h<CR>
 nmap <silent> <Leader>md :!mkdir -p %:p:h<CR>
+nmap <silent> <Leader>m :!make<CR><CR>
 
 " Search the current file for the word under the cursor and diplay matches
 nmap <silent> <Leader>gw :vimgrep /<C-r><C-w>/ %<CR>:ccl<CR>:cwin<CR><C-W>J:nohls<CR>
@@ -60,6 +66,12 @@ nmap <silent> <Leader>gw :vimgrep /<C-r><C-w>/ %<CR>:ccl<CR>:cwin<CR><C-W>J:nohl
 nmap <silent> <C-o> :NERDTreeToggle<CR>
 
 nnoremap ; :
+nnoremap <Space> :
+
+noremap <silent> j gj
+noremap <silent> k gk
+noremap <silent> 0 g0
+noremap <silent> $ g$
 
 " =================  Status Line  ====================
 
@@ -204,5 +216,3 @@ set wildmode=list:longest
 
 "Start scrolling when we're 8 lines away from margins
 set scrolloff=8
-
-

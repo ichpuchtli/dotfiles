@@ -6,6 +6,11 @@ autoload -Uz promptinit
 promptinit
 prompt walters
 
+# Git Prompt
+
+source ~/src/zsh-git-prompt/zshrc.sh
+PROMPT='%B%(?..[%?] )%b%n$(git_super_status)> '
+
 # Use vi keybindings 
 bindkey -v
 
@@ -42,3 +47,7 @@ if [ -f ~/.aliases ]; then
 fi
 
 source /usr/share/doc/pkgfile/command-not-found.zsh
+
+
+export PATH=$PATH:/home/sam/src/gcc-arm-none-eabi/bin
+
