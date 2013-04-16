@@ -142,7 +142,7 @@
      cases. -->
   <margins>
     <top>1</top>
-    <bottom>0</bottom>
+    <bottom>75</bottom>
     <left>0</left>
     <right>0</right>
   </margins>
@@ -288,11 +288,7 @@
     </keybind>
     <keybind key="W-r">
       <action name="Execute">
-        <command>update_doc</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-          <name>DOC</name>
-        </startupnotify>
+        <command>xfce4-terminal --geometry=80x20 --command &quot;sudo netcfg -r home&quot;</command>
       </action>
     </keybind>
     <keybind key="W-space">

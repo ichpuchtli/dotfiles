@@ -6,10 +6,15 @@ autoload -Uz promptinit
 promptinit
 prompt walters
 
-# Git Prompt
+parse_git_branch ()
+{
+    git branch 2> /dev/null | grep "*" | sed -e 's/* \(.*\)/ (\1)/g'
+}
 
-source ~/src/zsh-git-prompt/zshrc.sh
-PROMPT='%B%(?..[%?] )%b%n$(git_super_status)> '
+#function precmd() {
+#    export PROMPT="%n(parse_git_branch)>$"
+#}
+
 
 # Use vi keybindings 
 bindkey -v

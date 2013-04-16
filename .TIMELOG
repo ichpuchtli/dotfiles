@@ -71,3 +71,180 @@ START END DIFF PWD CMD
 08/04/13-20:27:27 08/04/13-20:27:29 2 /home/sam/src/simavr/simavr vim ../Makefile
 08/04/13-20:13:01 08/04/13-20:32:30 1169 /home/sam/src/simulide_ext/SimulIDE/examples/atmega64_test vim main.c
 08/04/13-20:27:36 08/04/13-20:32:57 321 /home/sam/src/simavr/simavr vim ../Makefile.common
+08/04/13-19:23:59 08/04/13-20:35:16 4277 /home/sam vim .zshrc
+08/04/13-20:37:26 08/04/13-20:46:13 527 /home/sam/src/simulide_ext/SimulIDE/examples/atmega64_test vim main.c
+08/04/13-21:00:15 08/04/13-21:00:32 17 /home/sam vim today
+08/04/13-21:15:17 08/04/13-21:15:17 0 /home/sam vim tod
+08/04/13-21:15:20 08/04/13-21:15:43 23 /home/sam vim todo
+13/04/13-14:04:09 13/04/13-14:04:10 1 /home/sam/src/tp2_arm vim taskq.
+13/04/13-14:04:15 13/04/13-14:04:31 16 /home/sam/src/tp2_arm vim taskq.c taskq.h
+13/04/13-14:05:11 13/04/13-14:05:16 5 /home/sam/src/tp2_arm vim rgb.c rgb.h
+13/04/13-14:08:15 13/04/13-14:08:35 20 /home/sam/src/tp2_arm/SDcard vim sd.c sd.h
+13/04/13-14:16:34 13/04/13-14:16:35 1 /home/sam/src/tp2_arm vim tp2_arm.
+13/04/13-14:16:37 13/04/13-14:23:40 423 /home/sam/src/tp2_arm vim tp2_arm.c
+13/04/13-14:24:28 13/04/13-14:24:29 1 /home/sam/src/tp2_arm vim tp2_arm.
+13/04/13-14:25:52 13/04/13-14:25:57 5 /home/sam/src/tp2_arm vim Makefile
+13/04/13-14:26:06 13/04/13-14:26:21 15 /home/sam/src/tp2_arm vim startup_ccs.c
+13/04/13-14:26:25 13/04/13-14:26:38 13 /home/sam/src/tp2_arm vim tp2_arm.ld
+13/04/13-14:27:10 13/04/13-14:29:12 122 /home/sam/src/tp2_arm vim processWav.c
+13/04/13-14:35:53 13/04/13-14:40:38 285 /home/sam/src/tp2_arm vim README.md
+13/04/13-14:40:47 13/04/13-14:46:46 359 /home/sam/src/tp2_arm vim tp2_arm.c
+13/04/13-14:46:49 13/04/13-14:46:55 6 /home/sam/src/tp2_arm vim README.md
+13/04/13-15:14:30 13/04/13-15:14:55 25 /home/sam/src/tp2_arm vim rgb.c rgb.h
+13/04/13-15:21:45 13/04/13-15:21:54 9 /home/sam/src/tp2_arm vim taskq.c
+13/04/13-15:23:28 13/04/13-15:23:37 9 /home/sam/src/tp2_arm vim circ_buf.h
+13/04/13-15:24:10 13/04/13-15:24:48 38 /home/sam/src/tp2_arm vim taskq.h
+13/04/13-15:26:48 13/04/13-15:26:52 4 /home/sam/src/tp2_arm vim taskq.c
+13/04/13-15:28:05 13/04/13-15:29:29 84 /home/sam/src/tp2_arm vim eventq.c
+13/04/13-15:29:39 13/04/13-15:29:42 3 /home/sam/src/tp2_arm vim adc.h
+13/04/13-15:59:05 13/04/13-15:59:11 6 /home/sam/src/tp2_arm vim tp2_arm.c
+13/04/13-16:01:15 13/04/13-16:02:18 63 /home/sam/src/tp2_arm vim stellaris/usblib/usbringbuf.c
+13/04/13-16:19:51 13/04/13-16:19:53 2 /home/sam/src/tp2_arm vim
+13/04/13-17:39:20 13/04/13-17:39:20 0 /home/sam/src/tp2_arm vim usbStructs.
+13/04/13-18:42:18 13/04/13-23:14:34 16336 /home/sam/src/tp2_arm vim sd.c sd.h
+13/04/13-23:14:59 13/04/13-23:15:10 11 /home/sam/src/tp2_arm vim README.md
+13/04/13-23:15:26 13/04/13-23:16:14 48 /home/sam/src/tp2_arm vim Makefile
+13/04/13-23:19:19 13/04/13-23:19:41 22 /home/sam/src/tp2_arm vim tp2_arm.c
+13/04/13-23:50:16 13/04/13-23:51:05 49 /home/sam/src/tp2_arm vim Makefile
+13/04/13-23:51:31 13/04/13-23:53:25 114 /home/sam/src/tp2_arm vim Makefile
+13/04/13-23:53:49 13/04/13-23:54:04 15 /home/sam/src/tp2_arm/stellaris vim /home/sam/.zshrc
+13/04/13-23:54:12 13/04/13-23:54:18 6 /home/sam/src/tp2_arm/stellaris vim Makefile
+13/04/13-23:54:22 13/04/13-23:54:35 13 /home/sam/src/tp2_arm/stellaris vim makedefs
+14/04/13-00:13:47 14/04/13-00:14:33 46 /home/sam/src/tp2_arm vim processWav.c
+14/04/13-00:14:59 14/04/13-00:37:03 1324 /home/sam/src/tp2_arm vim ledmatrix.h
+14/04/13-03:05:29 14/04/13-03:05:38 9 /home/sam/src/tp2_arm vim Makefile
+14/04/13-11:01:39 14/04/13-11:02:50 71 /home/sam/src/tp2_arm/stellaris/driverlib vim gpio.h
+14/04/13-12:48:35 14/04/13-12:55:38 423 /home/sam/src/tp2_arm vim Makefile
+14/04/13-14:14:36 14/04/13-14:14:53 17 /home/sam/src/tp2_arm vim sd.c
+14/04/13-14:18:21 14/04/13-14:18:52 31 /home/sam/src/tp2_arm vim tp2_arm.c
+14/04/13-14:51:10 14/04/13-14:55:38 268 /home/sam/src/tp2_arm vim adcmux.c adcmux.h
+14/04/13-14:57:44 14/04/13-15:02:30 286 /home/sam/src/tp2_arm vim eventq.c
+14/04/13-15:38:20 14/04/13-15:38:29 9 /home/sam/src/tp2_arm vim single_ended.c
+14/04/13-15:39:15 14/04/13-15:45:46 391 /home/sam/src/tp2_arm vim adcmux.c single_ended.c
+14/04/13-16:06:23 14/04/13-16:06:26 3 /home/sam vim /etc/modprobe.d/modprobe.conf
+14/04/13-16:06:32 14/04/13-16:06:35 3 /home/sam vim /etc/modprobe.d/broadcom-wl.conf
+14/04/13-16:06:42 14/04/13-16:06:45 3 /home/sam vim /etc/modules-load.d/ndiswrapper.conf
+14/04/13-16:18:22 14/04/13-16:18:48 26 /home/sam vim .aliases
+14/04/13-23:33:35 14/04/13-23:35:14 99 /home/sam vim .zshrc
+14/04/13-23:35:23 14/04/13-23:35:34 11 /home/sam vim .zshrc
+14/04/13-23:35:44 14/04/13-23:36:16 32 /home/sam vim .zshrc
+14/04/13-23:38:01 14/04/13-23:39:10 69 /home/sam vim .zshrc
+14/04/13-23:39:14 14/04/13-23:40:22 68 /home/sam vim .zshrc
+14/04/13-23:40:30 14/04/13-23:40:37 7 /home/sam vim .zshrc
+14/04/13-23:41:11 14/04/13-23:41:43 32 /home/sam vim .zshrc
+14/04/13-23:41:55 14/04/13-23:49:45 470 /home/sam vim .zshrc
+15/04/13-00:29:14 15/04/13-00:29:23 9 /home/sam vim .zshrc
+15/04/13-00:38:08 15/04/13-00:38:11 3 /home/sam/src/tp2_arm vim adcmux.c
+15/04/13-00:50:30 15/04/13-00:51:01 31 /home/sam/src/tp2_arm vim Makefile
+15/04/13-00:52:34 15/04/13-00:52:37 3 /home/sam/src/tp2_arm vim Makefile
+15/04/13-00:52:43 15/04/13-00:52:53 10 /home/sam/src/tp2_arm vim Makefile
+15/04/13-00:53:04 15/04/13-00:54:24 80 /home/sam/src/tp2_arm vim Makefile
+15/04/13-00:54:27 15/04/13-00:54:32 5 /home/sam/src/tp2_arm vim Makefile
+15/04/13-00:54:36 15/04/13-00:55:03 27 /home/sam/src/tp2_arm vim Makefile
+15/04/13-00:57:34 15/04/13-00:58:23 49 /home/sam/src/tp2_arm vim Makefile
+15/04/13-00:58:32 15/04/13-00:58:37 5 /home/sam/src/tp2_arm vim taskq.d
+15/04/13-00:58:41 15/04/13-00:58:48 7 /home/sam/src/tp2_arm vim Makefile
+15/04/13-00:59:01 15/04/13-00:59:19 18 /home/sam/src/tp2_arm vim taskq.c
+16/04/13-11:33:28 16/04/13-11:34:04 36 /home/sam vim .aliases
+16/04/13-12:17:52 16/04/13-12:18:03 11 /home/sam/src/simulide_ext vim SimulIDE.pro
+16/04/13-12:18:06 16/04/13-12:18:15 9 /home/sam/src/simulide_ext vim README.md
+16/04/13-12:18:17 16/04/13-12:18:18 1 /home/sam/src/simulide_ext vim Mak
+16/04/13-12:18:20 16/04/13-13:41:55 5015 /home/sam/src/simulide_ext vim Makefile
+16/04/13-13:42:57 16/04/13-13:43:07 10 /home/sam/src/qt5/Tools/QtCreator/bin vim qtcreator.sh
+16/04/13-14:50:05 16/04/13-14:50:34 29 /home/sam/src/simulide_ext hub log
+16/04/13-14:50:36 16/04/13-14:50:51 15 /home/sam/src/simulide_ext hub ll
+16/04/13-14:50:53 16/04/13-14:55:29 276 /home/sam/src/simulide_ext hub ll
+16/04/13-14:57:26 16/04/13-14:57:27 1 /home/sam/src/simulide_ext hub ll
+16/04/13-14:57:29 16/04/13-15:01:20 231 /home/sam/src/simulide_ext vim file
+16/04/13-15:01:21 16/04/13-15:04:30 189 /home/sam/src/simulide_ext hub ll
+16/04/13-15:18:00 16/04/13-15:23:16 316 /home/sam vim .aliases
+16/04/13-15:23:24 16/04/13-15:23:25 1 /home/sam vim tod
+16/04/13-15:29:27 16/04/13-15:29:38 11 /home/sam vim todo
+16/04/13-15:31:45 16/04/13-15:32:03 18 /home/sam/src/tinyos-main-wsn-course hub log
+16/04/13-15:33:27 16/04/13-15:33:27 0 /home/sam/src/tinyos-main-wsn-course hub pull mine master
+16/04/13-15:33:33 16/04/13-15:33:33 0 /home/sam/src/tinyos-main-wsn-course hub remote
+16/04/13-15:33:38 16/04/13-15:33:38 0 /home/sam/src/tinyos-main-wsn-course hub remote -v
+16/04/13-15:33:42 16/04/13-15:33:43 1 /home/sam/src/tinyos-main-wsn-course hub puhl
+16/04/13-15:33:45 16/04/13-15:33:50 5 /home/sam/src/tinyos-main-wsn-course hub pull
+16/04/13-15:40:10 16/04/13-15:41:00 50 /home/sam/src/tinyos-main-wsn-course/apps/UDPEcho vim UDPEchoP.nc
+16/04/13-15:56:38 16/04/13-15:57:05 27 /home/sam/src/tinyos-main-wsn-course/apps/UDPEcho vim UDPEchoC.nc
+16/04/13-15:57:33 16/04/13-15:57:35 2 /home/sam/src/tinyos-main-wsn-course/apps/UDPEcho vim UDPEchoP.nc
+16/04/13-15:57:37 16/04/13-15:57:41 4 /home/sam/src/tinyos-main-wsn-course/apps/UDPEcho vim UDPEchoC.nc
+16/04/13-15:58:53 16/04/13-16:22:07 1394 /home/sam/src/tinyos-main-wsn-course/tos/lib/net/blip vim IPStackC.nc UdpSocketC.nc UdpP.nc
+16/04/13-16:22:37 16/04/13-16:23:55 78 /home/sam/src/tinyos-main-wsn-course/apps/ddrs vim todo
+16/04/13-16:24:19 16/04/13-16:24:21 2 /home/sam/src/tinyos-main-wsn-course/apps/ddrs vim TODO.md
+16/04/13-16:24:48 16/04/13-16:25:15 27 /home/sam/src/tinyos-main-wsn-course/apps/ddrs vim TODO.md
+16/04/13-16:18:36 16/04/13-17:08:24 2988 /home/sam vim .config/openbox/menu.xml
+16/04/13-19:25:35 16/04/13-19:25:36 1 /home/sam/src/simulide_ext hub ll
+16/04/13-19:25:37 16/04/13-19:25:41 4 /home/sam/src/simulide_ext hub ls
+16/04/13-19:25:45 16/04/13-19:25:45 0 /home/sam/src/simulide_ext hub branch -a
+16/04/13-19:26:17 16/04/13-19:26:17 0 /home/sam/src/simulide_ext hub status
+16/04/13-19:26:30 16/04/13-19:26:31 1 /home/sam/src/simulide_ext make clean
+16/04/13-19:26:32 16/04/13-19:26:32 0 /home/sam/src/simulide_ext hub status
+16/04/13-19:26:45 16/04/13-19:26:45 0 /home/sam/src/simulide_ext hub checkout master
+16/04/13-19:27:08 16/04/13-19:27:08 0 /home/sam/src/simulide_ext hub status
+16/04/13-19:27:20 16/04/13-19:27:20 0 /home/sam/src/simulide_ext hub checkout -b bench_tests
+16/04/13-19:27:48 16/04/13-19:27:52 4 /home/sam/src/simulide_ext/SimulIDE/examples hub ll
+16/04/13-19:28:16 16/04/13-19:28:16 0 /home/sam/src/simulide_ext hub merge newarc
+16/04/13-19:28:17 16/04/13-19:28:18 1 /home/sam/src/simulide_ext hub merge newarch
+16/04/13-19:28:22 16/04/13-19:28:22 0 /home/sam/src/simulide_ext hub commit
+16/04/13-19:28:32 16/04/13-19:28:32 0 /home/sam/src/simulide_ext hub branch
+16/04/13-19:29:09 16/04/13-19:29:10 1 /home/sam/src/simulide_ext hub branch -d bench_tests
+16/04/13-19:29:17 16/04/13-19:29:17 0 /home/sam/src/simulide_ext hub checkout master
+16/04/13-19:29:23 16/04/13-19:29:24 1 /home/sam/src/simulide_ext hub branch -d bench_tests
+16/04/13-19:29:32 16/04/13-19:29:32 0 /home/sam/src/simulide_ext hub branch -D bench_tests
+16/04/13-19:29:37 16/04/13-19:29:37 0 /home/sam/src/simulide_ext hub branch
+16/04/13-19:29:57 16/04/13-19:29:57 0 /home/sam/src/simulide_ext hub checkout -b develop
+16/04/13-19:30:05 16/04/13-19:30:05 0 /home/sam/src/simulide_ext hub merge newarch
+16/04/13-19:30:45 16/04/13-19:30:45 0 /home/sam/src/simulide_ext/SimulIDE/examples hub branch
+16/04/13-19:31:20 16/04/13-19:31:20 0 /home/sam/src/simulide_ext/SimulIDE/examples hub checkout -b bench_tests
+16/04/13-21:30:25 16/04/13-21:30:30 5 /home/sam vim .aliases
+16/04/13-19:32:28 16/04/13-21:31:54 7166 /home/sam/src/simulide_ext/SimulIDE/examples/atmega64_timer_example vim main.c
+16/04/13-21:32:46 16/04/13-21:32:48 2 /home/sam/src hub clone ichpuchtli/tp1_avrcode
+16/04/13-21:33:03 16/04/13-21:33:03 0 /home/sam/src hub clone ichpuchtli/motoctl
+16/04/13-21:33:10 16/04/13-21:33:11 1 /home/sam/src hub clone ichpuchtli/motorctl
+16/04/13-21:33:29 16/04/13-21:33:33 4 /home/sam/src hub log
+16/04/13-21:33:44 16/04/13-21:33:44 0 /home/sam/src hub status
+16/04/13-21:42:47 16/04/13-21:42:47 0 /home/sam/src/simulide_ext/SimulIDE/examples/atmega64_timer_example make
+16/04/13-21:43:25 16/04/13-21:43:25 0 /home/sam/src/simulide_ext/SimulIDE/examples/atmega64_timer_example make
+16/04/13-21:43:42 16/04/13-21:43:42 0 /home/sam/src/simulide_ext/SimulIDE/examples/atmega64_timer_example make
+16/04/13-21:43:47 16/04/13-21:43:47 0 /home/sam/src/simulide_ext/SimulIDE/examples/atmega64_timer_example make
+16/04/13-21:43:58 16/04/13-21:43:58 0 /home/sam/src/simulide_ext/SimulIDE/examples/atmega64_timer_example make
+16/04/13-21:45:43 16/04/13-21:45:43 0 /home/sam/src/simulide_ext/SimulIDE/examples/atmega64_timer_example make
+16/04/13-21:45:56 16/04/13-21:45:56 0 /home/sam/src/simulide_ext/SimulIDE/examples/atmega64_timer_example make
+16/04/13-21:46:45 16/04/13-21:46:46 1 /home/sam/src/simulide_ext/SimulIDE/examples/atmega64_timer_example make
+16/04/13-22:59:58 16/04/13-23:07:29 451 /home/sam/src hub clone git://das-labor.org/users/bg/avr-crypto-lib
+16/04/13-21:34:37 17/04/13-00:26:39 10322 /home/sam/src/simulide_ext/SimulIDE/examples gvim --nofork atmega64_test atmega64_timer_example motorctl tp1_avrcode voltimeter
+17/04/13-00:26:45 17/04/13-00:28:53 128 /home/sam/src/simulide_ext/SimulIDE/examples vim motorctl
+17/04/13-00:29:06 17/04/13-00:29:09 3 /home/sam/src/simulide_ext/SimulIDE/examples vim tp1_avrcode/AVRTime.h
+17/04/13-00:29:12 17/04/13-00:29:32 20 /home/sam/src/simulide_ext/SimulIDE/examples vim tp1_avrcode/AVRTime.c
+17/04/13-00:29:47 17/04/13-00:29:47 0 /home/sam/src/tp2_arm hub branch
+17/04/13-00:38:08 17/04/13-00:39:01 53 /home/sam/src/tp2_arm hub log --graph --oneline --all
+17/04/13-00:39:16 17/04/13-00:39:16 0 /home/sam/src/tp2_arm hub log --graph --oneline --decorate --pretty=online
+17/04/13-00:39:20 17/04/13-00:39:31 11 /home/sam/src/tp2_arm hub log --graph --oneline --decorate
+17/04/13-00:39:34 17/04/13-00:39:53 19 /home/sam/src/tp2_arm hub log --graph --oneline --decorate --all
+17/04/13-00:40:01 17/04/13-00:40:23 22 /home/sam/src/tp2_arm hub log --graph --oneline --decorate --all --pretty=oneline
+17/04/13-00:42:08 17/04/13-00:42:14 6 /home/sam/src/tp2_arm hub log --graph --full-history --all --color --pretty=format:%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s
+17/04/13-00:44:54 17/04/13-00:46:12 78 /home/sam/src/tp2_arm vim /home/sam/.gitconfig
+17/04/13-00:46:19 17/04/13-00:46:21 2 /home/sam/src/tp2_arm hub log --graph --full-history --all --color --decorate --pretty=format:%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s
+17/04/13-00:53:45 17/04/13-00:53:45 0 /home/sam/src/tp2_arm hub branch
+17/04/13-00:53:48 17/04/13-00:53:48 0 /home/sam/src/tp2_arm hub branch -v
+17/04/13-00:54:02 17/04/13-00:54:36 34 /home/sam/src/tp2_arm vim /home/sam/.gitconfig
+17/04/13-00:54:45 17/04/13-00:54:49 4 /home/sam/src/tp2_arm hub log
+17/04/13-00:55:00 17/04/13-00:55:00 0 /home/sam/src/tp2_arm hub br
+17/04/13-00:55:07 17/04/13-00:55:15 8 /home/sam/src/tp2_arm vim /home/sam/.gitconfig
+17/04/13-00:55:17 17/04/13-00:55:17 0 /home/sam/src/tp2_arm hub br
+17/04/13-00:55:27 17/04/13-00:55:48 21 /home/sam/src/tp2_arm vim /home/sam/.gitconfig
+17/04/13-00:55:52 17/04/13-00:55:52 0 /home/sam/src/tp2_arm hub co master
+17/04/13-00:55:56 17/04/13-00:55:56 0 /home/sam/src/tp2_arm hub gr
+17/04/13-00:56:03 17/04/13-00:56:05 2 /home/sam/src/tp2_arm vim /home/sam/.gitconfig
+17/04/13-00:56:08 17/04/13-00:58:44 156 /home/sam/src/tp2_arm hub gr
+17/04/13-00:58:48 17/04/13-00:58:48 0 /home/sam/src/tp2_arm hub br
+17/04/13-00:58:56 17/04/13-00:59:05 9 /home/sam/src/tp2_arm hub push --all
+17/04/13-01:02:17 17/04/13-01:02:17 0 /home/sam/src/tp2_arm hub co adcmux
+17/04/13-01:03:43 17/04/13-01:03:44 1 /home/sam/src/tp2_arm vim adcmux.c
+17/04/13-01:03:49 17/04/13-01:03:49 0 /home/sam/src/tp2_arm hub stash list
+17/04/13-01:03:54 17/04/13-01:03:54 0 /home/sam/src/tp2_arm hub stash pop
+17/04/13-01:04:02 17/04/13-01:07:15 193 /home/sam/src/tp2_arm vim adcmux.c
+17/04/13-01:07:20 17/04/13-01:07:21 1 /home/sam hub status
+17/04/13-01:07:27 17/04/13-01:07:27 0 /home/sam hub stu
