@@ -34,6 +34,11 @@
 				<execute>steam</execute>
 			</action>
 		</item>
+		<item label="netcfg -r">
+			<action name="Execute">
+				<execute>xfce4-terminal --geometry=80x20 --command &quot;sudo netcfg -r home&quot;</execute>
+			</action>
+		</item>
 		<item label="rtorrent">
 			<action name="Execute">
 				<execute>xfce4-terminal --geometry=105x30 --command rtorrent</execute>

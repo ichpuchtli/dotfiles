@@ -8,12 +8,12 @@ prompt walters
 
 parse_git_branch ()
 {
-    git branch 2> /dev/null | grep "*" | sed -e 's/* \(.*\)/ (\1)/g'
+    git branch 2> /dev/null | grep "*" | sed -e 's/* \(.*\)/\1/g'
 }
 
-#function precmd() {
-#    export PROMPT="%n(parse_git_branch)>$"
-#}
+function precmd() {
+    export PROMPT="%B%(?..[%?] )%b%n@%U$(parse_git_branch)%u> "
+}
 
 
 # Use vi keybindings 
