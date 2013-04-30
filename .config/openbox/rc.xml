@@ -141,7 +141,7 @@
      cases. -->
   <margins>
     <top>1</top>
-    <bottom>0</bottom>
+    <bottom>16</bottom>
     <left>0</left>
     <right>0</right>
   </margins>
@@ -198,7 +198,7 @@
     </keybind>
     <keybind key="F9">
       <action name="Execute">
-        <command>~/src/scripts/toggle_touch.sh</command>
+        <command>~/.scripts/toggle_touch.sh</command>
       </action>
     </keybind>
     <keybind key="W-d">
@@ -267,10 +267,10 @@
     </keybind>
     <keybind key="W-t">
       <action name="Execute">
-        <command>lxterminal</command>
+        <command>xfce4-terminal</command>
         <startupnotify>
           <enabled>yes</enabled>
-          <name>lxterminal</name>
+          <name>xfce4-terminal</name>
         </startupnotify>
       </action>
     </keybind>
@@ -328,7 +328,10 @@
       </action>
     </keybind>
     <keybind key="W-a">
-      <action name="ToggleMaximizeFull"/>
+      <action name="Move"/>
+    </keybind>
+    <keybind key="W-s">
+      <action name="Resize"/>
     </keybind>
     <keybind key="W-Right">
       <action name="MoveToEdgeEast"/>

@@ -6,6 +6,16 @@ autoload -Uz promptinit
 promptinit
 prompt walters
 
+parse_git_branch ()
+{
+    git branch 2> /dev/null | grep "*" | sed -e 's/* \(.*\)/\1/g'
+}
+
+function precmd() {
+    export PROMPT="%B%(?..[%?] )%b%n@%U$(parse_git_branch)%u> "
+}
+
+
 # Use vi keybindings 
 bindkey -v
 
@@ -13,6 +23,7 @@ HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.zsh_history
 
+export EDITOR=vim
 
 [ ! "$UID" = "0" ] && archbey -c white
 [  "$UID" = "0" ] && archbey -c green
@@ -42,20 +53,6 @@ fi
 
 source /usr/share/doc/pkgfile/command-not-found.zsh
 
-man() {
-        env \
-                LESS_TERMCAP_mb=$(printf "\e[1;31m") \
-                LESS_TERMCAP_md=$(printf "\e[1;31m") \
-                LESS_TERMCAP_me=$(printf "\e[0m") \
-                LESS_TERMCAP_se=$(printf "\e[0m") \
-                LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
-                LESS_TERMCAP_ue=$(printf "\e[0m") \
-                LESS_TERMCAP_us=$(printf "\e[1;32m") \
-                        man "$@"
-}
-
-export EDITOR=vim
-
 export C_INCLUDE_PATH=/usr/include/i386-linux-gnu
 export CPLUST_INCLUDE_PATH=$C_INCLUDE_PATH
 export LIBRARY_PATH=/usr/lib/i386-linux-gnu
@@ -67,6 +64,5 @@ export CLASSPATH=$TOSROOT/support/sdk/java/tinyos.jar
 export PYTHONPATH=$PYTHONPATH:$TOSROOT/support/sdk/python
 export MAKERULES=$TOSROOT/support/make/Makerules
 
-
-export PATH=$PATH:$HOME/src/gcc-arm-none-eabi/bin
+export PATH=$PATH:/home/sam/src/gcc-arm-none-eabi/bin
 

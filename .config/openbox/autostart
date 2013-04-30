@@ -1,5 +1,7 @@
+sleep 3 && /usr/bin/nm-applet --sm-disable&
 guake &
 conky -q &
 nitrogen --restore &
 xcompmgr &
 thunar --daemon &
+
