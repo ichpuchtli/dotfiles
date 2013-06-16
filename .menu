@@ -1,0 +1,59 @@
+iconsize = 25
+
+item = _Firefox
+cmd = firefox
+icon = NULL
+
+item =  _Xfce Terminal
+cmd = xfce4-terminal
+icon = NULL
+
+item =  _Urxvt
+cmd = urxvtc
+icon = NULL
+
+item = _Ncmpcpp
+cmd = urxvtc -e ncmpcpp
+icon = NULL
+
+item = _QtFm
+cmd = qtfm
+icon = NULL
+
+SEPARATOR
+
+Submenu = Settings
+
+	icon = NULL
+
+	item=_Lxapperance
+	cmd=lxapperance
+	icon= NULL
+
+	item = _Arandr
+	cmd = aranda
+	icon = NULL
+
+	item = _Edit Menu
+	cmd = gvim ~/.menu
+	icon = NULL
+
+	SEPARATOR
+
+	item = Transparency On
+	cmd = ~/.xcompmgr.sh set
+	icon = NULL
+
+	item = Transparency Off
+	cmd = ~/.xcompmgr.sh unset
+	icon = NULL
+
+SEPARATOR
+
+item = _Poweroff
+cmd = systemctl poweroff
+icon = NULL
+
+item = _Reboot
+cmd = systemctl reboot
+icon = NULL

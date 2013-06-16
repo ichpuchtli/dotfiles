@@ -1,0 +1,11 @@
+out_to_console yes
+out_to_x no
+background no
+update_interval 1
+total_run_times 0
+use_spacer none
+
+TEXT
+${downspeed wlp7s0} ${upspeed wlp7s0} [$mem ${if_match ${cpu cpu0}<10}0${endif}${cpu cpu0} ${execi 1 amixer sget Master,0 | egrep -o '[0-9]+%'}] ${battery BAT1}  ${time %a %b %d %I:%M%P}
+
+
