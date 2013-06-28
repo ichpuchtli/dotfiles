@@ -1,3 +1,15 @@
+if [ "$COLORTERM" = "rxvt" ]; then
+    alsi -u -l
+fi
+
+if [ "$COLORTERM" = "xfce4-terminal" ]; then
+    alsi -a
+fi
+
+if [ -z "$COLORTERM" ]; then
+    alsi
+fi
+
 #Append History from multiple zsh sessions, cd by name
 setopt appendhistory autocd extendedglob
 
@@ -25,9 +37,6 @@ HISTFILE=~/.zsh_history
 
 export EDITOR=vim
 
-[ ! "$UID" = "0" ] && archbey -c white
-[  "$UID" = "0" ] && archbey -c green
-
 # Use modern completion system
 autoload -Uz compinit
 compinit
@@ -50,9 +59,4 @@ zstyle ':completion:*' verbose true
 if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
-
-source /usr/share/doc/pkgfile/command-not-found.zsh
-
-
-export PATH=$PATH:/home/sam/src/gcc-arm-none-eabi/bin
 

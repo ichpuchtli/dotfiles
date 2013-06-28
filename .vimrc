@@ -183,9 +183,9 @@ set nowb
 set autoindent
 "set smartindent
 "set smarttab
-set shiftwidth=4
-set softtabstop=4
-set tabstop=8
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
 set expandtab
 "set textwidth=79
 
@@ -216,3 +216,5 @@ set wildmode=list:longest
 
 "Start scrolling when we're 8 lines away from margins
 set scrolloff=8
+
+source ~/.vim/kde-devel-vim.vim

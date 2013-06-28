@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc">
   <resistance>
     <strength>10</strength>
@@ -51,24 +52,24 @@
       S: shade (roll up/down)
       D: omnipresent (on all desktops).
   -->
-    <keepBorder>yes</keepBorder>
-    <animateIconify>yes</animateIconify>
+    <keepBorder>no</keepBorder>
+    <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
-      <name>sans</name>
-      <size>8</size>
+      <name>Consolas</name>
+      <size>16</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>sans</name>
-      <size>8</size>
+      <name>Consolas</name>
+      <size>16</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
@@ -201,11 +202,7 @@
     </keybind>
     <keybind key="W-grave">
       <action name="Execute">
-        <command>gmrun</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-          <name>gmrun</name>
-        </startupnotify>
+        <command>dmenu_run</command>
       </action>
     </keybind>
     <keybind key="A-Escape">
@@ -257,6 +254,11 @@
         </startupnotify>
       </action>
     </keybind>
+    <keybind key="W-u">
+      <action name="Execute">
+        <command>urxvtc -geometry 83x27</command>
+      </action>
+    </keybind>
     <keybind key="W-q">
       <action name="Close"/>
     </keybind>
@@ -265,7 +267,7 @@
     </keybind>
     <keybind key="W-e">
       <action name="Execute">
-        <command>gvim ~/src</command>
+        <command>urxvtc -geometry 83x27</command>
       </action>
     </keybind>
     <keybind key="W-m">
@@ -278,17 +280,28 @@
       </action>
     </keybind>
     <keybind key="W-l">
-      <action name="Execute">
-        <command>slock</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-          <name>lock</name>
-        </startupnotify>
+      <action name="MoveRelative">
+        <x>100</x>
+      </action>
+    </keybind>
+    <keybind key="W-j">
+      <action name="MoveRelative">
+        <y>80</y>
+      </action>
+    </keybind>
+    <keybind key="W-k">
+      <action name="MoveRelative">
+        <y>-80</y>
+      </action>
+    </keybind>
+    <keybind key="W-h">
+      <action name="MoveRelative">
+        <x>-100</x>
       </action>
     </keybind>
     <keybind key="W-r">
       <action name="Execute">
-        <command>xfce4-terminal --geometry=80x20 --command &quot;sudo netcfg -r home&quot;</command>
+        <command>xfce4-terminal --geometry=80x20 --command "sudo netcfg -r home"</command>
       </action>
     </keybind>
     <keybind key="W-space">
@@ -314,7 +327,7 @@
     <keybind key="W-Down">
       <action name="MoveToEdgeSouth"/>
     </keybind>
-    <keybind key="W-h">
+    <keybind key="W-b">
       <action name="ToggleMaximizeHorz"/>
     </keybind>
     <keybind key="A-W-Up">
