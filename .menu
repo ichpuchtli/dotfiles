@@ -1,7 +1,13 @@
 iconsize = 25
 
-item = _Firefox
-cmd = firefox
+item = _Thunar
+cmd = thunar
+icon = NULL
+
+SEPARATOR
+
+item = _Chromium
+cmd = chromium
 icon = NULL
 
 item =  _Xfce Terminal
@@ -16,18 +22,18 @@ item = _Ncmpcpp
 cmd = urxvtc -e ncmpcpp
 icon = NULL
 
-item = _QtFm
-cmd = qtfm
-icon = NULL
-
 SEPARATOR
 
 Submenu = Settings
 
 	icon = NULL
 
-	item=_Lxapperance
-	cmd=lxapperance
+	item=_Wicd
+	cmd=wicd-client
+	icon= NULL
+
+	item=_Lxappearance
+	cmd=lxappearance
 	icon= NULL
 
 	item = _Arandr
@@ -51,9 +57,9 @@ Submenu = Settings
 SEPARATOR
 
 item = _Poweroff
-cmd = systemctl poweroff
+cmd = sudo poweroff
 icon = NULL
 
 item = _Reboot
-cmd = systemctl reboot
+cmd = sudo reboot
 icon = NULL
